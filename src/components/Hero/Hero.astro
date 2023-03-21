@@ -1,0 +1,36 @@
+---
+import * as styles from './Hero.css';
+
+export interface Info {
+	title: string;
+    buttonText: string;
+}
+export interface Props {
+	info: Info;
+  size?: keyof typeof styles.size;
+}
+
+const { info} = Astro.props;
+const { size = 'medium' } = Astro.props;
+---
+
+<section class="hero">
+    <div class="wrapper">
+      <h1 class="hero__title" class:list={[styles.root, styles.size[size]]}>
+        {info.title}
+      </h1>
+      <div>
+        <a href="/" class="hero__link">
+            {info.buttonText}
+        </a>
+        <!-- <Link
+          class="hero__link"
+          to="/"
+        >
+          {info.Hero_Button_Text}
+          <StaticImage class="hero__svg" src="../../assets/images/svg/arrow-right.svg" alt="arrow right" />
+        </Link> -->
+      </div>
+    </div>
+  </section>
+

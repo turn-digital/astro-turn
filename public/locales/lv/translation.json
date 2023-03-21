@@ -1,0 +1,11 @@
+{
+  "testpage": {
+    "title": "Latiši Welcome to my awesome website!",
+    "subtitle": "LV This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+    "test": "jauns teksts?"
+  },
+  "index" : {
+    "heroTitle": "We’ll get it done. Together.",
+    "heroButton": "Show me how"
+  }
+}
