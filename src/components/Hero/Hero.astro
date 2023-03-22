@@ -1,22 +1,18 @@
 ---
-import * as styles from './Hero.css';
-
 export interface Info {
 	title: string;
-    buttonText: string;
+  buttonText: string;
 }
 export interface Props {
 	info: Info;
-  size?: keyof typeof styles.size;
 }
 
 const { info} = Astro.props;
-const { size = 'medium' } = Astro.props;
 ---
 
 <section class="hero">
     <div class="wrapper">
-      <h1 class="hero__title" class:list={[styles.root, styles.size[size]]}>
+      <h1 class="hero__title">
         {info.title}
       </h1>
       <div>

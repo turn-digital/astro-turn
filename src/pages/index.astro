@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero/Hero.astro";
 import { t, changeLanguage } from "i18next";
-import '../styles/styles.css';
 changeLanguage("lv");
 
 const hero = {
@@ -13,11 +12,12 @@ const hero = {
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<p class="atest">Tricky scss part <span>with span</span></p>
 		<h1>{t("testpage.title")}</h1>
 		<Hero info={hero}/>
 	</main>
 </Layout>
 
-<!-- <style lang="scss">
+<style lang="scss">
 	@import '../styles/styles.scss';
-</style> -->
+</style>
