@@ -1,0 +1,59 @@
+---
+export interface Info {
+	title: string;
+  tag: string;
+  subtitle: string;
+  content: string;
+}
+
+export interface Cards {
+	title: string;
+  tags: string;
+  content: string;
+  key: any;
+}
+
+export interface Props {
+	info: Info;
+  cards: Cards[]
+}
+
+const { info, cards} = Astro.props;
+---
+
+<section id="services" class="services">
+  <div class="services__bg-top">
+    <div class="wrapper">
+      <div>
+        <img class="icon__slash"  src="./src/assets/images/svg/slash-line--white.svg" alt="slash line" />
+        <p class="services__text services__text--white">{info.tag}</p>
+      </div>
+      <h2 class="services__title services__title--white">{info.title}</h2>
+    </div>
+  </div>
+    <div class="services__bg-bottom">
+      <div class="wrapper">
+        <ul class="services__list">
+        {cards.map((card) => (
+          <li class="services__item">
+            <h3 class="services__subtitle">{card.title}</h3>
+            <p class="services__desc">{card.content}</p>
+            <ul class="services__tags">
+              {card.tags.split(",").map((tag) => (
+                <li class="services__desc services__desc--margin">
+                  <img class="services__svg" src="./src/assets/images/svg/romb.svg" alt="romb" />
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+        </ul>
+        <h2 class="services__title services__title--margin services__title--desk">{info.subtitle}</h2>
+        <p class="services__text">{info.content}</p>
+      </div>
+    </div>
+</section>
+<style lang="scss">
+	@import './services.scss';
+</style>

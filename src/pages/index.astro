@@ -1,18 +1,60 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero/Hero.astro";
+import Cta from "../components/Cta/Cta.astro";
+import Services from "../components/Services/Services.astro";
 import { t, changeLanguage } from "i18next";
+
 changeLanguage("lv");
 
 const hero = {
     title: t("index.heroTitle"),
     buttonText: t("index.heroButton"),
 };
+const cta = {
+    tag: t("index.ctaTag"),
+    title: t("index.ctaTitle"),
+    content: t("index.ctaContent"),
+};
+const servicesInfo = {
+    tag: t("index.serviceTag"),
+    title: t("index.serviceTitle"),
+    subtitle: t("index.serviceSubtitle"),
+    content: t("index.serviceContent"),
+};
+const servicesCards = [
+    {
+        title: t("index.cardTitle1"),
+        content: t("index.cardTitleContent1"),
+        tags: t("index.cardTitleTags1"),
+        key: 1,
+    },
+    {
+        title: t("index.cardTitle2"),
+        content: t("index.cardTitleContent2"),
+        tags: t("index.cardTitleTags2"),
+        key: 2,
+    },
+    {
+        title: t("index.cardTitle3"),
+        content: t("index.cardTitleContent3"),
+        tags: t("index.cardTitleTags3"),
+        key: 3,
+    },
+    {
+        title: t("index.cardTitle4"),
+        content: t("index.cardTitleContent4"),
+        tags: t("index.cardTitleTags4"),
+        key: 4,
+    },
+];
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Hero info={hero}/>
+		<Cta info={cta} />
+        <Services cards={servicesCards} info={servicesInfo} />
 	</main>
 </Layout>
 
