@@ -11,22 +11,18 @@ const { info} = Astro.props;
 ---
 
 <section class="hero">
-    <div class="wrapper">
-      <h1 class="hero__title">
-        {info.title}
-      </h1>
-      <div>
-        <a href="/" class="hero__link">
-            {info.buttonText}
-        </a>
-        <!-- <Link
-          class="hero__link"
-          to="/"
-        >
-          {info.Hero_Button_Text}
-          <StaticImage class="hero__svg" src="../../assets/images/svg/arrow-right.svg" alt="arrow right" />
-        </Link> -->
-      </div>
+  <div class="wrapper">
+    <h1 class="hero__title">
+      {info.title}
+    </h1>
+    <div>
+      <a href="/" class="hero__link">
+          {info.buttonText}
+          <img class="hero__svg" src="./src/assets/images/svg/arrow-right.svg" alt="test"/>
+      </a>
     </div>
-  </section>
-
+  </div>
+</section>
+<style lang="scss">
+	@import './hero.scss';
+</style>

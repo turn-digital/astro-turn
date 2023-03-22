@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
 import astroI18next from "astro-i18next";
-import vanillaExtract from 'astro-vanilla-extract';
+import image from '@astrojs/image';
 // https://astro.build/config
 export default defineConfig({
     integrations: [
         astroI18next(),
-        vanillaExtract()
+        image({
+            serviceEntryPoint: '@astrojs/image/sharp'
+          })
     ]
 });

@@ -1,0 +1,70 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.hero {
+    background-color: $color-light-gray;
+    padding: 88px 0;
+  
+    &__title {
+      margin-bottom: 96px;
+      color: $color-light-black;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      font-family: 'Inter', sans-serif;
+    }
+  
+    &__link {
+      padding: 4px;
+      color: $color-light-black;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+      text-decoration-line: underline;
+      font-family: 'Inter', sans-serif;
+  
+  
+      &:focus-visible  {
+        outline: none;
+        text-decoration: underline;
+        box-shadow: 0 0 0 2px $color-green;
+      }
+  
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  
+    &__svg {
+      width: 12px;
+      height: 20px;
+      margin-left: 24px;
+      vertical-align: middle;
+    }
+  
+    @include size-laptop() {
+      padding: 160px 0 170px;
+  
+      &__title {
+        font-size: 120px;
+        line-height: 144px;
+      }
+    
+      &__link {
+        padding: 10px;
+        font-size: 32px;
+        line-height: 48px;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 2px;
+      }
+  
+      &__svg {
+        width: 18px;
+        height: 32px;
+        margin-left: 44px;
+      }
+    }
+  }
+  
