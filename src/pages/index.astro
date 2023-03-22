@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero/Hero.astro";
 import Cta from "../components/Cta/Cta.astro";
 import Services from "../components/Services/Services.astro";
+import Stories from "../components/Stories/Stories.astro";
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("lv");
@@ -48,6 +49,17 @@ const servicesCards = [
         key: 4,
     },
 ];
+const stories = {
+    tag: t("index.storiesTag"),
+    title: t("index.storiesTitle"),
+    storyTitle1: t("index.storyTitle1"),
+    storyTitle2: t("index.storyTitle2"),
+    storyTitle3: t("index.storyTitle3"),
+    storyContent1: t("index.storyContent1"),
+    storyContent2: t("index.storyContent2"),
+    storyContent3: t("index.storyContent3"),
+    btnText: t("index.storiesBtnText")
+};
 ---
 
 <Layout title="Welcome to Astro.">
@@ -55,6 +67,7 @@ const servicesCards = [
 		<Hero info={hero}/>
 		<Cta info={cta} />
         <Services cards={servicesCards} info={servicesInfo} />
+        <Stories info={stories} />
 	</main>
 </Layout>
 

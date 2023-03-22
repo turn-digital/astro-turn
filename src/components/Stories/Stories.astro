@@ -1,0 +1,104 @@
+---
+export interface Info {
+  tag: string;
+	title: string;
+  storyTitle1:string;
+  storyTitle2: string;
+  storyTitle3: string;
+  storyContent1: string;
+  storyContent2: string;
+  storyContent3: string;
+  btnText: string;
+}
+export interface Props {
+	info: Info;
+}
+
+const { info } = Astro.props;
+---
+
+<section id="story" class="stories">
+  <div class="wrapper">
+    <div>
+    <img class="icon__slash" src=".src/assets/images/svg/slash-line.svg" alt="slash line" />
+    <p class="stories__text">{info.tag}</p>
+    </div>
+    <h2 class="stories__title">{info.title}</h2>
+    <ul class="stories__list">
+      <li class="stories__item stories__item--first stories__box">
+        <h3 class="stories__subtitle">{info.storyTitle1}</h3>
+        <p class="stories__desc">{info.storyContent1}</p>
+        <a
+          class="stories__link stories__link--margin"
+          href={"/digital-transformation"}
+        >
+          {info.btnText}
+          <img class="stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
+        </a>
+        <div class="stories__block-grid stories__block-grid--mob">
+          <img
+            class="stories__img stories__item--first"
+            src="./src/assets/images/svg/eSaeima.svg"
+            alt="e-Saeima"
+          />
+          <img
+            class="stories__img stories__item--second"
+            src={"./src/assets/images/svg/tiesibsargs.svg"}
+            alt="tiesibsargs"
+          />
+          <img
+            class="stories__img stories__item--third"
+            src={"./src/assets/images/svg/csp.svg"}
+            alt="csp"
+          />
+        </div>
+      </li>
+      <li class="stories__item stories__item--second">
+        <h3 class="stories__subtitle">{info.storyTitle2}</h3>
+        <p class="stories__desc">{info.storyContent2}</p>
+        <a
+          class="stories__link stories__link--margin"
+          href={"/digital-transformation"}
+        >
+          {info.btnText}
+          <img class="stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
+        </a>
+        <div class="stories__block-small">
+          <img class="stories__img" src={"./src/assets/images/svg/cfla.svg"} alt="cfla" />
+          <img class="stories__img" src={"./src/assets/images/svg/trl.svg"} alt="trl" />
+        </div>
+      </li>
+      <li class="stories__item stories__item--third">
+        <h3 class="stories__subtitle">{info.storyTitle3}</h3>
+        <p class="stories__desc">{info.storyContent3}</p>
+        <a
+          class="stories__link stories__link--margin"
+          href={"/digital-transformation"}
+        >
+          {info.btnText}
+          <img class="stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
+        </a>
+        <div class="stories__block-grid stories__block-grid--bottom">
+          <img
+            class="stories__img stories__item--first"
+            src={"./src/assets/images/svg/galerijaCentrs.svg"}
+            alt="galerija centrs"
+          />
+          <img
+            class="stories__img stories__item--second"
+            src={"./src/assets/images/svg/eParaksts.svg"}
+            alt="eParaksts"
+          />
+          <img
+            class="stories__img stories__item--third"
+            src={"./src/assets/images/svg/eSilva.svg"}
+            alt="e-Silva"
+          />
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<style lang="scss">
+	@import './stories.scss';
+</style>
