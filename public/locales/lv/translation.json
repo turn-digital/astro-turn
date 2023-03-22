@@ -40,5 +40,22 @@
     "storyContent2": "One of our core values is people. We put strong focus and effort on making digital services and products easily accessible, usable and comprehensible for everyone. ",
     "storyContent3": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia. ",
     "storiesBtnText": "Read more"
+  },
+  "global": {
+    "footerInformationHeader": "Information",
+    "footerCookiePolicy": "Cookie policy",
+    "footerAvailability": "Notice of availability",
+    "footerPrivacyPolicy": "Privacy policy",
+    "footerContactsHeader": "Contacts",
+    "footerPhone": "+371 45535523",
+    "footerEmail": "info@turn.lv",
+    "footerAddress": "Riga, Latvia",
+    "footerCompanyDetailsHeader": "Company details:",
+    "footerSIA": "SIA \"Turn Digital\"",
+    "footerREG": "Reg. Nr: 40203026165",
+    "footerBANK": "Bank: Swedbank A/S,",
+    "footerSWIFT": "S.W.I.F.T.: HABALV22",
+    "footerACCOUNT": "Account: LV48HABA0551042639577",
+    "footerCopyright": "© 2023 Turn Digital, Latvia"
   }
 }

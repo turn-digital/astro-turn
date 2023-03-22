@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero.astro";
 import Cta from "../components/Cta/Cta.astro";
 import Services from "../components/Services/Services.astro";
 import Stories from "../components/Stories/Stories.astro";
+import Footer from "../components/Footer/Footer.astro";
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("lv");
@@ -60,6 +61,23 @@ const stories = {
     storyContent3: t("index.storyContent3"),
     btnText: t("index.storiesBtnText")
 };
+const footer = {
+    informationHeader: t("global.FooterInformationHeader"),
+    cookiePolicy: t("global.FooterCookiePolicy"),
+    availability: t("global.FooterAvailability"),
+    privacyPolicy: t("global.FooterPrivacyPolicy"),
+    contactsHeader: t("global.FooterContactsHeader"),
+    phone: t("global.FooterPhone"),
+    email: t("global.FooterEmail"),
+    address: t("global.FooterAddress"),
+    companyDetails: t("global.FooterCompanyDetails"),
+    SIA: t("global.FooterSIA"),
+    REG: t("global.FooterREG"),
+    BANK: t("global.FooterBANK"),
+    SWIFT: t("global.FooterSWIFT"),
+    ACCOUNT: t("global.FooterACCOUNT"),
+    copyright: t("global.FooterCopyright"),
+};
 ---
 
 <Layout title="Welcome to Astro.">
@@ -68,6 +86,9 @@ const stories = {
 		<Cta info={cta} />
         <Services cards={servicesCards} info={servicesInfo} />
         <Stories info={stories} />
+        <!-- <Contacts contactsInfo={contactsInfo} />
+        <CareInfo careInfo={careInfo} /> -->
+        <Footer info={footer} />
 	</main>
 </Layout>
 

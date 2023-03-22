@@ -1,0 +1,82 @@
+---
+export interface Info {
+  informationHeader: string;
+  cookiePolicy: string;
+  availability: string;
+  privacyPolicy: string;
+  contactsHeader: string;
+  phone: string;
+  email: string;
+  address: string;
+  companyDetails: string;
+  SIA: string;
+  REG: string;
+  BANK: string;
+  SWIFT: string;
+  ACCOUNT: string;
+  copyright: string;
+}
+export interface Props {
+	info: Info;
+}
+
+const { info} = Astro.props;
+---
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__box">
+  <a class="footer__logo" href="/"><img src="./src/assets/images/logo-footer.png" alt="logo"/></a>
+    <nav class="footer__nav">
+      <!-- activeClass="footer__link--active" -->
+      <a class="footer__link" href="/">Home</a>
+      <a class="footer__link" href="/#story">Story</a>
+      <a class="footer__link" href="/#services">Services</a>
+      <a class="footer__link" href="/#contacts">Contacts</a>
+    </nav>          
+    </div>
+
+    <ul class="footer__list">
+      <li class="footer__item">
+        <h5 class="footer__title">{info.informationHeader}</h5>
+        <div>
+          <a class="footer__text footer__text--hover" href="/">{info.cookiePolicy}</a>
+          <a class="footer__text footer__text--hover" href="/">{info.availability}</a>
+          <a class="footer__text footer__text--hover" href="/">{info.privacyPolicy}</a>
+        </div>
+      </li>
+      <li class="footer__item">
+        <h5 class="footer__title">{info.contactsHeader}</h5>
+        <ul>
+          <li>
+            <a class="footer__text footer__text--hover" href={"tel:" + info.phone}>{info.phone}</a>
+          </li>
+          <li>
+            <a class="footer__text footer__text--hover" href={"mailto:" + info.email}>{info.email}</a>
+          </li>
+          <li>
+            <a class="footer__text footer__text--hover" href="">{info.address}</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer__item">
+        <h5 class="footer__title">{info.companyDetails}</h5>
+        <ul>
+          <li class="footer__text">
+            <p class="footer__inline">{info.SIA}&nbsp;</p>
+            <p class="footer__inline">{info.REG}&nbsp;</p>
+          </li>
+          <li class="footer__text">
+            <p class="footer__inline">{info.BANK}&nbsp;</p>
+            <p class="footer__inline">{info.SWIFT}</p>
+          </li>
+          <li class="footer__text">{info.ACCOUNT}</li>
+        </ul>
+      </li>
+    </ul>
+    <p  class="footer__text">{info.copyright}</p>
+  </div>
+</footer>
+<style lang="scss">
+	@import "./footer.scss";
+</style>
