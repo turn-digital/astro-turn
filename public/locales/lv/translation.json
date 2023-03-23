@@ -39,7 +39,22 @@
     "storyContent1": "We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work.",
     "storyContent2": "One of our core values is people. We put strong focus and effort on making digital services and products easily accessible, usable and comprehensible for everyone. ",
     "storyContent3": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia. ",
-    "storiesBtnText": "Read more"
+    "storiesBtnText": "Read more",
+
+    "ContactsTag": "Contacts",
+    "ContactsHeader": "Get in touch",
+    "ContactsContent1": "Have a project in mind?",
+    "ContactsContent2": " Need a wise advice? ",
+    "ContactsContent3": " Want to say hi? ",
+    "ContactsContent4": " I excited to talk to you.",
+    "ContactsName": "Peteris Jurcenko",
+    "ContactsPhone": "+371 23456789",
+    "ContactsEmail": "peteris@turn.lv",
+
+    "CareInfoTag": "Our sustainability initiatives",
+    "CareInfoTitle": "What we care about",
+    "CareCard1Content": "Website for every school effortlessly.",
+    "CareCard2Content": "An inclusive digital environment: a path to sustainable growth"
   },
   "global": {
     "footerInformationHeader": "Information",

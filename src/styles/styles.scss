@@ -2,7 +2,8 @@
 // @use "variables";
 @use "mixins" as *;
 
-// @use "../components/Hero/hero";
+@use "../components/Contacts/contacts";
+@use "../components/CareInfo/care-info";
 // @use "../pages/index.scss";
 
 .wrapper {

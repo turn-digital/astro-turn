@@ -5,6 +5,8 @@ import Cta from "../components/Cta/Cta.astro";
 import Services from "../components/Services/Services.astro";
 import Stories from "../components/Stories/Stories.astro";
 import Footer from "../components/Footer/Footer.astro";
+import Contacts from "../components/Contacts/Contacts.jsx";
+import CareInfo from "../components/CareInfo/CareInfo.jsx";
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("lv");
@@ -61,6 +63,23 @@ const stories = {
     storyContent3: t("index.storyContent3"),
     btnText: t("index.storiesBtnText")
 };
+const contacts = {
+    tag: t("index.ContactsTag"),
+    header: t("index.ContactsHeader"),
+    content1: t("index.ContactsContent1"),
+    content2: t("index.ContactsContent2"),
+    content3: t("index.ContactsContent3"),
+    content4: t("index.ContactsContent4"),
+    name: t("index.ContactsName"),
+    phone: t("index.ContactsPhone"),
+    email: t("index.ContactsEmail"),
+};
+const careInfo = {
+    tag: t("index.CareInfoTag"),
+    title: t("index.CareInfoTitle"),
+    Card1Content: t("index.CareCard1Content"),
+    Card2Content: t("index.CareCard2Content"),
+};
 const footer = {
     informationHeader: t("global.FooterInformationHeader"),
     cookiePolicy: t("global.FooterCookiePolicy"),
@@ -86,8 +105,8 @@ const footer = {
 		<Cta info={cta} />
         <Services cards={servicesCards} info={servicesInfo} />
         <Stories info={stories} />
-        <!-- <Contacts contactsInfo={contactsInfo} />
-        <CareInfo careInfo={careInfo} /> -->
+        <Contacts info={contacts} />
+        <CareInfo info={careInfo} /> 
         <Footer info={footer} />
 	</main>
 </Layout>
