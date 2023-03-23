@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import Cta from "../components/Cta/Cta.jsx";
 import Services from "../components/Services/Services.jsx";
@@ -89,7 +90,7 @@ const footer = {
     phone: t("global.FooterPhone"),
     email: t("global.FooterEmail"),
     address: t("global.FooterAddress"),
-    companyDetails: t("global.FooterCompanyDetails"),
+    companyDetails: t("global.FooterCompanyDetailsHeader"),
     SIA: t("global.FooterSIA"),
     REG: t("global.FooterREG"),
     BANK: t("global.FooterBANK"),
@@ -100,6 +101,7 @@ const footer = {
 ---
 
 <Layout title="Welcome to Astro.">
+    <Header />
 	<main>
 		<Hero info={hero}/>
 		<Cta info={cta} />

@@ -1,0 +1,146 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.header {
+    padding: 40px 0;
+    background-color: $color-light-gray;
+    display: flex;
+    justify-content: space-between;
+
+    &__button {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 0 2px $color-green;
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 2px $color-green;
+        }
+    }
+
+    &__nav {
+        [aria-current="page"] {
+            border-bottom: 2px solid $color-green;
+        }
+
+        &--desc {
+            display: none;
+        }
+    }
+
+    .active {
+        border-bottom: 2px solid $color-green;
+    }
+
+    &__menu--mob {
+        .header {
+            &__link {
+                color: $color-light-gray;
+                margin-bottom: 24px;
+                font-size: 16px;
+                line-height: 32px;
+            }
+
+            &__nav {
+                background-color: $color-light-black;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+        
+                &--desc {
+                    display: none;
+                }
+            }
+
+            &__box {
+                display: flex;
+                justify-content: space-between;
+               margin: 40px 0;
+            }
+        }
+    }
+
+    &__link {
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+        color: $color-light-black;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-bottom: 2px solid $color-green;
+        }
+
+        &:focus-visible {
+            outline: none;
+            text-decoration: underline;
+            box-shadow: 0 0 0 2px $color-green;
+        }
+    }
+
+    &__logo:focus-visible {
+        outline: none;
+        text-decoration: underline;
+        box-shadow: 0 0 0 2px $color-green;
+    }
+
+    &__img {
+        max-height: 32px;
+    }
+
+    @include size-laptop() {
+        padding: 48px 0 8px;
+        &__button {
+            display: none;
+        }
+
+        &__nav {
+            padding: 0;
+            background-color: transparent;
+            position: relative;
+            flex-direction: row;
+
+            &--desc {
+                display: block;
+            }
+
+            &--mob {
+                display: none;
+            }
+        }
+
+        &__link {
+            margin-left: 32px;
+            padding-bottom: 6px;
+        }
+
+        &__button--mob {
+            display: none;
+        }
+
+        &__menu--mob {
+            display: none;
+        }
+
+        &__img {
+            max-height: 40px;
+        }
+    }
+
+}
+
+.ReactModal__Overlay {
+    background-color: $color-light-black !important;
+}
+
+@include size-laptop() { 
+    .ReactModal__Overlay {
+        display: none;
+    }
+}
