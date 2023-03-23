@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero/Hero.astro";
-import Cta from "../components/Cta/Cta.astro";
-import Services from "../components/Services/Services.astro";
-import Stories from "../components/Stories/Stories.astro";
-import Footer from "../components/Footer/Footer.astro";
+import Hero from "../components/Hero/Hero.jsx";
+import Cta from "../components/Cta/Cta.jsx";
+import Services from "../components/Services/Services.jsx";
+import Stories from "../components/Stories/Stories.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 import Contacts from "../components/Contacts/Contacts.jsx";
 import CareInfo from "../components/CareInfo/CareInfo.jsx";
 import { t, changeLanguage } from "i18next";
@@ -55,13 +55,13 @@ const servicesCards = [
 const stories = {
     tag: t("index.storiesTag"),
     title: t("index.storiesTitle"),
-    storyTitle1: t("index.storyTitle1"),
-    storyTitle2: t("index.storyTitle2"),
-    storyTitle3: t("index.storyTitle3"),
-    storyContent1: t("index.storyContent1"),
-    storyContent2: t("index.storyContent2"),
-    storyContent3: t("index.storyContent3"),
-    btnText: t("index.storiesBtnText")
+    StoryTitle1: t("index.storyTitle1"),
+    StoryTitle2: t("index.storyTitle2"),
+    StoryTitle3: t("index.storyTitle3"),
+    StoryContent1: t("index.storyContent1"),
+    StoryContent2: t("index.storyContent2"),
+    StoryContent3: t("index.storyContent3"),
+    StoryButtonText: t("index.storiesBtnText")
 };
 const contacts = {
     tag: t("index.ContactsTag"),

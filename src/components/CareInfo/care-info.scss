@@ -6,6 +6,7 @@
     padding: 64px 0;
 
     &__title {
+        font-family: 'Inter', sans-serif;
         margin: 32px 0;
         color: $color-light-black;
         font-weight: 700;
@@ -14,6 +15,7 @@
     }
 
     &__text {
+        font-family: 'Inter', sans-serif;
         display: inline-block;
         color: $color-light-black;
         font-weight: 400;
@@ -31,6 +33,7 @@
     }
 
     &__desc {
+        font-family: 'Inter', sans-serif;
         padding: 32px 0;
         color: $color-light-black;
         font-weight: 400;
@@ -39,6 +42,7 @@
     }
 
     &__link {
+        font-family: 'Inter', sans-serif;
         padding: 4px;
         color: $color-light-black;
         font-weight: 400;

@@ -57,20 +57,20 @@
     "CareCard2Content": "An inclusive digital environment: a path to sustainable growth"
   },
   "global": {
-    "footerInformationHeader": "Information",
-    "footerCookiePolicy": "Cookie policy",
-    "footerAvailability": "Notice of availability",
-    "footerPrivacyPolicy": "Privacy policy",
-    "footerContactsHeader": "Contacts",
-    "footerPhone": "+371 45535523",
-    "footerEmail": "info@turn.lv",
-    "footerAddress": "Riga, Latvia",
-    "footerCompanyDetailsHeader": "Company details:",
-    "footerSIA": "SIA \"Turn Digital\"",
-    "footerREG": "Reg. Nr: 40203026165",
-    "footerBANK": "Bank: Swedbank A/S,",
-    "footerSWIFT": "S.W.I.F.T.: HABALV22",
-    "footerACCOUNT": "Account: LV48HABA0551042639577",
-    "footerCopyright": "© 2023 Turn Digital, Latvia"
+    "FooterInformationHeader": "Information",
+    "FooterCookiePolicy": "Cookie policy",
+    "FooterAvailability": "Notice of availability",
+    "FooterPrivacyPolicy": "Privacy policy",
+    "FooterContactsHeader": "Contacts",
+    "FooterPhone": "+371 45535523",
+    "FooterEmail": "info@turn.lv",
+    "FooterAddress": "Riga, Latvia",
+    "FooterCompanyDetailsHeader": "Company details:",
+    "FooterSIA": "SIA \"Turn Digital\"",
+    "FooterREG": "Reg. Nr: 40203026165",
+    "FooterBANK": "Bank: Swedbank A/S,",
+    "FooterSWIFT": "S.W.I.F.T.: HABALV22",
+    "FooterACCOUNT": "Account: LV48HABA0551042639577",
+    "FooterCopyright": "© 2023 Turn Digital, Latvia"
   }
 }
