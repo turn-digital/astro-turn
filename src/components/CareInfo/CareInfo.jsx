@@ -7,7 +7,7 @@ const CareInfo = (props) => {
       <section className="care-info">
         <div className="wrapper">
         <div>
-          <img  className="icon__slash" src="./src/assets/images/svg/slash-line.svg" alt="slash line" />
+          <img  className="icon__slash" src="/assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="care-info__text">{tag}</p>
           </div>
           <h2 className="care-info__title">{title}</h2>
@@ -16,7 +16,7 @@ const CareInfo = (props) => {
             <a href="https://www.schooliowp.lv" target="_blank">
               <img
                 className="care-info__img"
-                src="./src/assets/images/logo-schoolio.png"
+                src="/assets/images/logo-schoolio.png"
                 alt="logo schoolio WP"
               />
               </a>
@@ -28,14 +28,14 @@ const CareInfo = (props) => {
                 href="https://www.schooliowp.lv"
               >
                 www.schooliowp.lv
-                <img className="care-info__svg" src="./src/assets/images/svg/blank-link.svg" alt="blank link" />
+                <img className="care-info__svg" src="/assets/images/svg/blank-link.svg" alt="blank link" />
               </a>
             </li>
             <li className="care-info__item">
               <a href="https://www.pieklustamiba.lv" target="_blank">
               <img
                 className="care-info__img"
-                src="./src/assets/images/logo-pieklustamiba.png"
+                src="/assets/images/logo-pieklustamiba.png"
                 alt="logo Pieklustamiba"
               />
               </a>
@@ -47,7 +47,7 @@ const CareInfo = (props) => {
                 href="https://www.pieklustamiba.lv"
               >
                 www.pieklustamiba.lv
-                <img className="care-info__svg" src="./src/assets/images/svg/blank-link.svg" alt="blank link" />
+                <img className="care-info__svg" src="/assets/images/svg/blank-link.svg" alt="blank link" />
               </a>
             </li>
           </ul>
