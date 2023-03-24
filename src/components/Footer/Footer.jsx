@@ -20,43 +20,43 @@ const Footer = () => {
 
           <ul className='footer__list'>
             <li className='footer__item'>
-              <h5 className="footer__title">{t("global.FooterInformationHeader")}</h5>
+              <h5 className="footer__title">{t("global.footerInformationHeader")}</h5>
               <div>
-                <a className='footer__text footer__text--hover' href="/">{t("global.FooterCookiePolicy")}</a>
-                <a className='footer__text footer__text--hover' href="/">{t("global.FooterAvailability")}</a>
-                <a className='footer__text footer__text--hover' href="/">{t("global.FooterPrivacyPolicy")}</a>
+                <a className='footer__text footer__text--hover' href="/">{t("global.footerCookiePolicy")}</a>
+                <a className='footer__text footer__text--hover' href="/">{t("global.footerAvailability")}</a>
+                <a className='footer__text footer__text--hover' href="/">{t("global.footerPrivacyPolicy")}</a>
               </div>
             </li>
             <li className='footer__item'>
-              <h5 className="footer__title">{t("global.FooterContactsHeader")}</h5>
+              <h5 className="footer__title">{t("global.footerContactsHeader")}</h5>
               <ul>
                 <li>
-                  <a className='footer__text footer__text--hover' href={"tel:" + t("global.FooterPhone")}>{t("global.FooterPhone")}</a>
+                  <a className='footer__text footer__text--hover' href={"tel:" + t("global.footerPhone")}>{t("global.footerPhone")}</a>
                 </li>
                 <li>
-                  <a className='footer__text footer__text--hover' href={"mailto:" + t("global.FooterEmail")}>{t("global.FooterEmail")}</a>
+                  <a className='footer__text footer__text--hover' href={"mailto:" + t("global.footerEmail")}>{t("global.footerEmail")}</a>
                 </li>
                 <li>
-                  <a className='footer__text footer__text--hover' href=''>{t("global.FooterAddress")}</a>
+                  <a className='footer__text footer__text--hover' href=''>{t("global.footerAddress")}</a>
                 </li>
               </ul>
             </li>
             <li className='footer__item'>
-              <h5 className="footer__title">{t("global.FooterCompanyDetailsHeader")}</h5>
+              <h5 className="footer__title">{t("global.footerCompanyDetailsHeader")}</h5>
               <ul>
                 <li className='footer__text'>
-                  <p className='footer__inline'>{t("global.FooterSIA")}&nbsp;</p>
-                  <p className='footer__inline'>{t("global.FooterREG")}&nbsp;</p>
+                  <p className='footer__inline'>{t("global.footerSIA")}&nbsp;</p>
+                  <p className='footer__inline'>{t("global.footerREG")}&nbsp;</p>
                 </li>
                 <li className='footer__text'>
-                  <p className='footer__inline'>{t("global.FooterBANK")}&nbsp;</p>
-                  <p className='footer__inline'>{t("global.FooterSWIFT")}</p>
+                  <p className='footer__inline'>{t("global.footerBANK")}&nbsp;</p>
+                  <p className='footer__inline'>{t("global.footerSWIFT")}</p>
                 </li>
-                <li className='footer__text'>{t("global.FooterACCOUNT")}</li>
+                <li className='footer__text'>{t("global.footerACCOUNT")}</li>
               </ul>
             </li>
           </ul>
-          <p  className='footer__text'>{t("global.FooterCopyright")}</p>
+          <p  className='footer__text'>{t("global.footerCopyright")}</p>
         </div>
       </footer>
     </>

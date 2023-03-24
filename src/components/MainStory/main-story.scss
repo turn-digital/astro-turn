@@ -6,6 +6,7 @@
     padding: 40px 0;
   
     &__title {
+      font-family: 'Inter', sans-serif;
       margin-bottom: 32px;
       color: $color-light-black;
       font-weight: 700;
@@ -15,6 +16,7 @@
   
     &__content {
       p {
+        font-family: 'Inter', sans-serif;
         color: $color-light-black;
         font-weight: 400;
         font-size: 20px;
@@ -22,6 +24,7 @@
       }
   
       h3 {
+        font-family: 'Inter', sans-serif;
         margin: 32px 0;
         color: $color-light-black;
         font-weight: 700;
@@ -40,11 +43,13 @@
       padding: 32px;
   
       h3 {
+        font-family: 'Inter', sans-serif;
         margin-top: 0;
       }
     }
   
     &__subtitle {
+      font-family: 'Inter', sans-serif;
       margin-bottom: 24px;
       color: $color-light-black;
       font-weight: 700;
