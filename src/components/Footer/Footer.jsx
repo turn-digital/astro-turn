@@ -9,12 +9,12 @@ const Footer = () => {
       <footer className='footer'>
         <div className='wrapper'>
           <div className="footer__box">
-        <a className='footer__logo' href="/"><img src='./src/assets/images/logo-footer.png' alt="logo"/></a>
+        <a className='footer__logo' href="/astro-turn/"><img src='/assets/images/logo-footer.png' alt="logo"/></a>
           <nav className='footer__nav'>
-            <a activeClassName="footer__link--active" className='footer__link' href="/">{t("global.headerHome")}</a>
-            <a activeClassName="footer__link--active" className='footer__link' href="/#story">{t("global.headerStory")}</a>
-            <a activeClassName="footer__link--active" className='footer__link' href="/#services">{t("global.headerServices")}</a>
-            <a activeClassName="footer__link--active" className='footer__link' href="/#contacts">{t("global.headerContacts")}</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/">{t("global.headerHome")}</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#story">{t("global.headerStory")}</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#services">{t("global.headerServices")}</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#contacts">{t("global.headerContacts")}</a>
           </nav>          
           </div>
 
@@ -22,9 +22,9 @@ const Footer = () => {
             <li className='footer__item'>
               <h5 className="footer__title">{t("global.footerInformationHeader")}</h5>
               <div>
-                <a className='footer__text footer__text--hover' href="/">{t("global.footerCookiePolicy")}</a>
-                <a className='footer__text footer__text--hover' href="/">{t("global.footerAvailability")}</a>
-                <a className='footer__text footer__text--hover' href="/">{t("global.footerPrivacyPolicy")}</a>
+                <a className='footer__text footer__text--hover' href="/astro-turn/">{t("global.footerCookiePolicy")}</a>
+                <a className='footer__text footer__text--hover' href="/astro-turn/">{t("global.footerAvailability")}</a>
+                <a className='footer__text footer__text--hover' href="/astro-turn/">{t("global.footerPrivacyPolicy")}</a>
               </div>
             </li>
             <li className='footer__item'>
