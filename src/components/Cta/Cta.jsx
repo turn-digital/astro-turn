@@ -7,7 +7,7 @@ const Cta = (props) => {
       <section className="cta">
         <div className="wrapper">
           <div>
-          <img  className="icon__slash" src="./src/assets/images/svg/slash-line.svg" alt="slash line" />
+          <img  className="icon__slash" src="/assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="cta__text">{tag}</p>
           </div>
           <h2 className="cta__title">{title}</h2>

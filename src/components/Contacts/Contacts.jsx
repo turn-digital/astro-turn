@@ -8,7 +8,7 @@ const Contacts = (props) => {
       <section id="contacts" className="contacts">
         <div className="wrapper">
         <div>
-          <img class="icon__slash" src="./src/assets/images/svg/slash-line.svg" alt="slash line" />
+          <img class="icon__slash" src="/assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="contacts__text contacts__text--inline">{tag}</p>
           </div>
           <h2 className="contacts__title">{header}</h2>

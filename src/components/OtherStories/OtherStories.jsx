@@ -17,7 +17,7 @@ const OtherStories = (props) => {
     <section id="stories" className="other-stories">
       <div className="wrapper">
       <div>
-          <img  className="icon__slash" src="./src/assets/images/svg/slash-line.svg" alt="slash line" />
+          <img  className="icon__slash" src="/assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="other-stories__text">{tag}</p>
           </div>
         <h2 className="other-stories__title">{title}</h2>
@@ -30,7 +30,7 @@ const OtherStories = (props) => {
                   href={"/astro-turn/user-centric-approach"}
                 >
                   {story1ButtonText}
-                  <img className="other-stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
+                  <img className="other-stories__svg" src="/assets/images/svg/arrow-right.svg" alt="arrow right" />
                 </a>
             </li>
             <li className="other-stories__item">
@@ -41,7 +41,7 @@ const OtherStories = (props) => {
                   href={"/astro-turn/website-redesign"}
                 >
                   {story2ButtonText}
-                  <img className="other-stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
+                  <img className="other-stories__svg" src="/assets/images/svg/arrow-right.svg" alt="arrow right" />
                 </a>
             </li>
         </ul>

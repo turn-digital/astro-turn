@@ -18,7 +18,7 @@ const Hero = (props) => {
               href="/astro-turn/"
             >
               {buttonText}
-              <img className="hero__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
+              <img className="hero__svg" src="/assets/images/svg/arrow-right.svg" alt="arrow right" />
             </a>
           </div>
         </div>
