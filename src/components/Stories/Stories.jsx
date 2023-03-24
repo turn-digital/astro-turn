@@ -38,7 +38,7 @@ const Stories = (props) => {
                 <p className="stories__desc">{StoryContent1}</p>
                 <a
                   className="stories__link stories__link--margin"
-                  href={"/digital-transformation"}
+                  href={"/astro-turn/digital-transformation"}
                 >
                   {StoryButtonText}
                   <img className="stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
@@ -65,7 +65,7 @@ const Stories = (props) => {
             <li className="stories__item stories__item--second">
               <h3 className="stories__subtitle">{StoryTitle2}</h3>
               <p className="stories__desc">{StoryContent2}</p>
-              <a className="stories__link" href={"/user-centric-approach"}>
+              <a className="stories__link" href={"/astro-turn/user-centric-approach"}>
               {StoryButtonText}
               <img className="stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
               </a>
@@ -77,7 +77,7 @@ const Stories = (props) => {
             <li className="stories__item stories__item--third">
               <h3 className="stories__subtitle">{StoryTitle3}</h3>
               <p className="stories__desc">{StoryContent3}</p>
-              <a className="stories__link" href={"/website-redesign"}>
+              <a className="stories__link" href={"/astro-turn/website-redesign"}>
               {StoryButtonText}
               <img className="stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
               </a>

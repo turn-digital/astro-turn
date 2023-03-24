@@ -27,7 +27,7 @@ const OtherStories = (props) => {
               <p className="other-stories__desc">{story1Content}</p>
               <a
                   className="other-stories__link"
-                  href={"/user-centric-approach"}
+                  href={"/astro-turn/user-centric-approach"}
                 >
                   {story1ButtonText}
                   <img className="other-stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
@@ -38,7 +38,7 @@ const OtherStories = (props) => {
               <p className="other-stories__desc">{story2Content}</p>
               <a
                   className="other-stories__link"
-                  href={"/website-redesign"}
+                  href={"/astro-turn/website-redesign"}
                 >
                   {story2ButtonText}
                   <img className="other-stories__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
