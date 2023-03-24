@@ -11,10 +11,10 @@ const Footer = () => {
           <div className="footer__box">
         <a className='footer__logo' href="/astro-turn/"><img src='/assets/images/logo-footer.png' alt="logo"/></a>
           <nav className='footer__nav'>
-            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/">Home</a>
-            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#story">Story</a>
-            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#services">Services</a>
-            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#contacts">Contacts</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/">{t("global.headerHome")}</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#story">{t("global.headerStory")}</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#services">{t("global.headerServices")}</a>
+            <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#contacts">{t("global.headerContacts")}</a>
           </nav>          
           </div>
 

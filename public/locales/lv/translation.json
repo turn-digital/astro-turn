@@ -125,6 +125,16 @@
     "footerBANK": "Bank: Swedbank A/S,",
     "footerSWIFT": "S.W.I.F.T.: HABALV22",
     "footerACCOUNT": "Account: LV48HABA0551042639577",
-    "footerCopyright": "© 2023 Turn Digital, Latvia"
+    "footerCopyright": "© 2023 Turn Digital, Latvia",
+
+    "headerHome": "Home",
+    "headerStory": "Story",
+    "headerServices": "Services",
+    "headerContacts": "Contacts",
+
+    "errorTag": "Oops! Page not found",
+    "errorTitle": "404 error",
+    "errorText": "The page you are looking for might have been removed, had its name changed or is temporarily unavailable",
+    "errorBtn": "Go to homepage"
   }
 }
