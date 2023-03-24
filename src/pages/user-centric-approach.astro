@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.jsx";
+import MainStory from "../components/MainStory/MainStory.jsx";
+import Contacts from "../components/Contacts/Contacts.jsx";
+import OtherStories from "../components/OtherStories/OtherStories.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("lv");
+
+const mainStory = {
+    storyHeader: t("user.StoryHeader"),
+    mainStoryContent: t("user.MainStoryContent"),
+    resultTitle: t("user.ResultTitle"),
+    resultContent: t("user.ResultContent"),
+    workingWithTitle: t("user.WorkingWithTitle"),
+};
+const otherStories = {
+    tag: t("user.OtherStoriesTag"),
+    title: t("user.OtherStoriesHeader"),
+    story1Header: t("user.OtherStoriesTitle1"),
+    story2Header: t("user.OtherStoriesTitle2"),
+    story1Content: t("user.OtherStoriesContent1"),
+    story2Content: t("user.OtherStoriesContent2"),
+    story1ButtonText: t("user.OtherStoriesButtonText1"),
+    story2ButtonText: t("user.OtherStoriesButtonText2"),
+};
+const contacts = {
+    tag: t("index.ContactsTag"),
+    header: t("index.ContactsHeader"),
+    content1: t("index.ContactsContent1"),
+    content2: t("index.ContactsContent2"),
+    content3: t("index.ContactsContent3"),
+    content4: t("index.ContactsContent4"),
+    name: t("index.ContactsName"),
+    phone: t("index.ContactsPhone"),
+    email: t("index.ContactsEmail"),
+};
+---
+
+<Layout title="digital-transformation page">
+	<Header />
+	<main>
+		<MainStory info={mainStory} />
+		<Contacts info={contacts} />
+        <OtherStories info={otherStories} />
+        <Footer />
+	</main>
+</Layout>
+
+<style lang="scss">
+	@import '../styles/styles.scss';
+</style>

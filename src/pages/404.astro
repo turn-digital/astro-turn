@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="error-page">
+    <Header />
+    <main class="error-page__block">
+        <div class="wrapper">
+
+            <p class="error-page__text">Oops! Page not found</p>
+            <h1 class="error-page__title">404 error</h1>
+            <p class="error-page__text">The page you are looking for might have been removed,  had its name changed or is temporarily unavailable</p>
+            <a
+                class="error-page__link"
+                href="/"
+            >
+                Go to homepage
+                <img class="error-page__svg" src="./src/assets/images/svgsvg/arrow-right.svg" alt="arrow right" />
+            </a>
+        </div>
+        <div class="error-page__circle error-page__circle--first"></div>
+        <div class="error-page__circle error-page__circle--second"></div>
+        <div class="error-page__circle error-page__circle--third"></div>
+        <div class="error-page__circle error-page__circle--fourth"></div>
+        <Footer />
+    </main>
+    </div>
+</Layout>
+
+<style lang="scss">
+	@import '../styles/styles.scss';
+</style>

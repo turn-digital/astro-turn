@@ -81,23 +81,6 @@ const careInfo = {
     Card1Content: t("index.CareCard1Content"),
     Card2Content: t("index.CareCard2Content"),
 };
-const footer = {
-    informationHeader: t("global.FooterInformationHeader"),
-    cookiePolicy: t("global.FooterCookiePolicy"),
-    availability: t("global.FooterAvailability"),
-    privacyPolicy: t("global.FooterPrivacyPolicy"),
-    contactsHeader: t("global.FooterContactsHeader"),
-    phone: t("global.FooterPhone"),
-    email: t("global.FooterEmail"),
-    address: t("global.FooterAddress"),
-    companyDetails: t("global.FooterCompanyDetailsHeader"),
-    SIA: t("global.FooterSIA"),
-    REG: t("global.FooterREG"),
-    BANK: t("global.FooterBANK"),
-    SWIFT: t("global.FooterSWIFT"),
-    ACCOUNT: t("global.FooterACCOUNT"),
-    copyright: t("global.FooterCopyright"),
-};
 ---
 
 <Layout title="Welcome to Astro.">
@@ -108,8 +91,8 @@ const footer = {
         <Services cards={servicesCards} info={servicesInfo} />
         <Stories info={stories} />
         <Contacts info={contacts} />
-        <CareInfo info={careInfo} /> 
-        <Footer info={footer} />
+        <CareInfo info={careInfo} />
+        <Footer />
 	</main>
 </Layout>
 

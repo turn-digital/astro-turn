@@ -8,9 +8,12 @@
 @use "../components/Hero/hero";
 @use "../components/Services/services";
 @use "../components/Stories/stories";
+@use "../components/MainStory/main-story";
+@use "../components/OtherStories/other-stories";
 
 @use "../components/Footer/footer";
 @use "../components/Header/header";
+// @use "../pages/error-page";
 
 
 // @use "../pages/index.scss";
