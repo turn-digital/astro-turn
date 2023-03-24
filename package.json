@@ -13,12 +13,9 @@
   "dependencies": {
     "@astrojs/image": "^0.16.1",
     "@astrojs/preact": "^2.1.0",
-    "@pingux/astro": "^1.44.1",
     "astro": "^2.1.5",
     "astro-i18next": "^1.0.0-beta.21",
     "preact": "^10.13.1",
-    "react-a11y-modal": "^1.1.4",
-    "react-modal": "^3.16.1",
     "sass": "^1.59.3",
     "sharp": "^0.31.3"
   },
