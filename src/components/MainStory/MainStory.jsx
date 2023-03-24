@@ -1,5 +1,5 @@
 import React from "preact";
-import StoryResult from "../storyResult/StoryResult";
+import StoryResult from "../StoryResult/StoryResult";
 
 const MainStory = (props) => {
   const {
