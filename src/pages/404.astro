@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header.astro";
 import Footer from "../components/Footer/Footer.jsx";
-
 ---
 
 <Layout title="Welcome to Astro.">
@@ -10,24 +9,23 @@ import Footer from "../components/Footer/Footer.jsx";
     <Header />
     <main class="error-page__block">
         <div class="wrapper">
-
             <p class="error-page__text">Oops! Page not found</p>
             <h1 class="error-page__title">404 error</h1>
-            <p class="error-page__text">The page you are looking for might have been removed,  had its name changed or is temporarily unavailable</p>
+            <p class="error-page__text">The page you are looking for might have been removed, had its name changed or is temporarily unavailable</p>
             <a
                 class="error-page__link"
                 href="/"
             >
                 Go to homepage
-                <img class="error-page__svg" src="./src/assets/images/svgsvg/arrow-right.svg" alt="arrow right" />
+                <img class="error-page__svg" src="./src/assets/images/svg/arrow-right.svg" alt="arrow right" />
             </a>
         </div>
         <div class="error-page__circle error-page__circle--first"></div>
         <div class="error-page__circle error-page__circle--second"></div>
         <div class="error-page__circle error-page__circle--third"></div>
         <div class="error-page__circle error-page__circle--fourth"></div>
-        <Footer />
     </main>
+    <Footer />
     </div>
 </Layout>
 
