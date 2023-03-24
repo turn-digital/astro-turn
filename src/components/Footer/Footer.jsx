@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className='footer'>
         <div className='wrapper'>
           <div className="footer__box">
-        <a className='footer__logo' href="/astro-turn/"><img src='./src/assets/images/logo-footer.png' alt="logo"/astro-turn/></a>
+        <a className='footer__logo' href="/astro-turn/"><img src='./src/assets/images/logo-footer.png' alt="logo"/></a>
           <nav className='footer__nav'>
             <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/">Home</a>
             <a activeClassName="footer__link--active" className='footer__link' href="/astro-turn/#story">Story</a>
