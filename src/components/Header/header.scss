@@ -36,33 +36,6 @@
         border-bottom: 2px solid $color-green;
     }
 
-    &__menu--mob {
-        .header {
-            &__link {
-                color: $color-light-gray;
-                margin-bottom: 24px;
-                font-size: 16px;
-                line-height: 32px;
-            }
-
-            &__nav {
-                background-color: $color-light-black;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-        
-                &--desc {
-                    display: none;
-                }
-            }
-
-            &__box {
-                display: flex;
-                justify-content: space-between;
-               margin: 40px 0;
-            }
-        }
-    }
 
     &__link {
         font-family: 'Inter', sans-serif;
@@ -135,12 +108,43 @@
 
 }
 
-.ReactModal__Overlay {
-    background-color: $color-light-black !important;
-}
+.modal {
+    &__inner {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0;
+        background-color:$color-light-black;
+    }
 
-@include size-laptop() { 
-    .ReactModal__Overlay {
+    &__close {
         display: none;
+    }
+
+    .header {
+        &__link {
+            color: $color-light-gray;
+            margin-bottom: 24px;
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        &__nav {
+            background-color: $color-light-black;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+    
+            &--desc {
+                display: none;
+            }
+        }
+
+        &__box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+           margin: 40px 0;
+        }
     }
 }

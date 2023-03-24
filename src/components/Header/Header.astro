@@ -1,0 +1,46 @@
+---
+import { Modal } from 'accessible-astro-components'
+---
+
+<div class="wrapper">
+  <header class="header">
+    <a class="header__logo"  href="/"><img class="header__img" src="./src/assets/images/logo-header.png" alt="logo" /></a>
+    <div class="header__menu">
+      <div>
+      <Modal
+        triggerId="modal-header--mob"
+        class="header__menu--mob wrapper"
+        >
+        <div class="header__box">
+        <a class="header__logo" href="/" onclick="closeModal()"><img class="header__img" src="./src/assets/images/logo-header.png" alt="logo" /></a>
+          <button
+            class="header__button header__button--close"
+            onclick="closeModal()"
+          >
+            <img  src="./src/assets/images/svg/menu-close.svg" alt="menu close" />
+          </button>
+        </div>
+        <nav class="header__nav header__nav--mob">
+        <a class="header__link" href="/" onclick="closeModal()">Home</a>
+        <a class="header__link "href="/#story"  onclick="closeModal()">Story</a>
+        <a class="header__link" href="/#services" onclick="closeModal()">Services</a>
+        <a class="header__link" href="/#contacts" onclick="closeModal()">Contacts</a>
+        </nav>
+      </Modal>
+      </div>
+      <nav class="header__nav header__nav--desc">
+        <a class="header__link" href="/">Home</a>
+        <a class="header__link "href="/#story"  onclick="closeModal()">Story</a>
+        <a class="header__link" href="/#services">Services</a>
+        <a class="header__link" href="/#contacts">Contacts</a>
+      </nav>
+      
+    </div>
+    <button
+      class="header__button header__button--mob"
+      id="modal-header--mob"
+    >
+      <img  src="./src/assets/images/svg/menu.svg" alt="menu open" />
+    </button>
+  </header>
+</div>
