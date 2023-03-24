@@ -1,5 +1,8 @@
 ---
 import { Modal } from 'accessible-astro-components'
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("lv");
 ---
 
 <div class="wrapper">
@@ -21,18 +24,18 @@ import { Modal } from 'accessible-astro-components'
           </button>
         </div>
         <nav class="header__nav header__nav--mob">
-        <a class="header__link" href="/" onclick="closeModal()">Home</a>
-        <a class="header__link "href="/#story"  onclick="closeModal()">Story</a>
-        <a class="header__link" href="/#services" onclick="closeModal()">Services</a>
-        <a class="header__link" href="/#contacts" onclick="closeModal()">Contacts</a>
+        <a class="header__link" href="/" onclick="closeModal()">{t("global.headerHome")}</a>
+        <a class="header__link "href="/#story"  onclick="closeModal()">{t("global.headerStory")}</a>
+        <a class="header__link" href="/#services" onclick="closeModal()">{t("global.headerServices")}</a>
+        <a class="header__link" href="/#contacts" onclick="closeModal()">{t("global.headerContacts")}</a>
         </nav>
       </Modal>
       </div>
       <nav class="header__nav header__nav--desc">
-        <a class="header__link" href="/">Home</a>
-        <a class="header__link "href="/#story"  onclick="closeModal()">Story</a>
-        <a class="header__link" href="/#services">Services</a>
-        <a class="header__link" href="/#contacts">Contacts</a>
+        <a class="header__link" href="/">{t("global.headerHome")}</a>
+        <a class="header__link "href="/#story"  onclick="closeModal()">{t("global.headerStory")}</a>
+        <a class="header__link" href="/#services">{t("global.headerServices")}</a>
+        <a class="header__link" href="/#contacts">{t("global.headerContacts")}</a>
       </nav>
       
     </div>
