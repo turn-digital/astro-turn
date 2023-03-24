@@ -27,7 +27,7 @@ const Stories = (props) => {
       <section id="story" className="stories">
         <div className="wrapper">
           <div>
-          <img  className="icon__slash" src="/assets/images/svg/slash-line.svg" alt="slash line" />
+          <img  className="icon__slash" src="/astro-turn/assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="stories__text">{tag}</p>
           </div>
           <h2 className="stories__title">{title}</h2>
@@ -41,23 +41,23 @@ const Stories = (props) => {
                   href={"/astro-turn/digital-transformation"}
                 >
                   {StoryButtonText}
-                  <img className="stories__svg" src="/assets/images/svg/arrow-right.svg" alt="arrow right" />
+                  <img className="stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" />
                 </a>
               </div>
               <div className="stories__block-grid stories__block-grid--mob">
                 <img
                   className="stories__img stories__item--first"
-                  src="/assets/images/svg/eSaeima.svg"
+                  src="/astro-turn/assets/images/svg/eSaeima.svg"
                   alt="e-Saeima"
                 />
                 <img
                   className="stories__img stories__item--second"
-                  src="/assets/images/svg/tiesibsargs.svg"
+                  src="/astro-turn/assets/images/svg/tiesibsargs.svg"
                   alt="tiesibsargs"
                 />
                 <img
                   className="stories__img stories__item--third"
-                  src="/assets/images/svg/csp.svg"
+                  src="/astro-turn/assets/images/svg/csp.svg"
                   alt="csp"
                 />
               </div>
@@ -67,11 +67,11 @@ const Stories = (props) => {
               <p className="stories__desc">{StoryContent2}</p>
               <a className="stories__link" href={"/astro-turn/user-centric-approach"}>
               {StoryButtonText}
-              <img className="stories__svg" src="/assets/images/svg/arrow-right.svg" alt="arrow right" />
+              <img className="stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" />
               </a>
               <div className="stories__block-small">
-                <img className="stories__img" src="/assets/images/svg/cfla.svg" alt="cfla" />
-                <img className="stories__img" src="/assets/images/svg/trl.svg" alt="trl" />
+                <img className="stories__img" src="/astro-turn/assets/images/svg/cfla.svg" alt="cfla" />
+                <img className="stories__img" src="/astro-turn/assets/images/svg/trl.svg" alt="trl" />
               </div>
             </li>
             <li className="stories__item stories__item--third">
@@ -79,22 +79,22 @@ const Stories = (props) => {
               <p className="stories__desc">{StoryContent3}</p>
               <a className="stories__link" href={"/astro-turn/website-redesign"}>
               {StoryButtonText}
-              <img className="stories__svg" src="/assets/images/svg/arrow-right.svg" alt="arrow right" />
+              <img className="stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" />
               </a>
               <div className="stories__block-grid stories__block-grid--bottom">
                 <img
                   className="stories__img stories__item--first"
-                  src="/assets/images/svg/galerijaCentrs.svg"
+                  src="/astro-turn/assets/images/svg/galerijaCentrs.svg"
                   alt="galerija centrs"
                 />
                 <img
                   className="stories__img stories__item--second"
-                  src="/assets/images/svg/eParaksts.svg"
+                  src="/astro-turn/assets/images/svg/eParaksts.svg"
                   alt="eParaksts"
                 />
                 <img
                   className="stories__img stories__item--third"
-                  src="/assets/images/svg/eSilva.svg"
+                  src="/astro-turn/assets/images/svg/eSilva.svg"
                   alt="e-Silva"
                 />
               </div>

@@ -18,7 +18,7 @@ const MainStory = (props) => {
         <aside className="main-story__aside">
           <img
           className="main-story__fit"
-          src="/assets/images/svg/eSaeima--mob.svg"
+          src="/astro-turn/assets/images/svg/eSaeima--mob.svg"
             alt="e-Saeima"
           />
         </aside>
@@ -30,14 +30,14 @@ const MainStory = (props) => {
             <li>
             <img
               className="main-story__img"
-              src="/assets/images/svg/tiesibsargs.svg"
+              src="/astro-turn/assets/images/svg/tiesibsargs.svg"
               alt="Tiesibsargs"
               />    
             </li>
             <li>
             <img
               className="main-story__img"
-              src="/assets/images/svg/csp.svg"
+              src="/astro-turn/assets/images/svg/csp.svg"
               alt="CSP"
               />    
             </li>

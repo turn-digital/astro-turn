@@ -9,7 +9,7 @@ const Services = (props) => {
         <div className="services__bg-top">
           <div className="wrapper">
             <div>
-              <img className="icon__slash"  src="/assets/images/svg/slash-line--white.svg" alt="slash line" />
+              <img className="icon__slash"  src="/astro-turn/assets/images/svg/slash-line--white.svg" alt="slash line" />
               <p className="services__text services__text--white">{tag}</p>
             </div>
             <h2 className="services__title services__title--white">{title}</h2>
@@ -25,7 +25,7 @@ const Services = (props) => {
                   <ul className="services__tags">
                     {card.tags.split(",").map((tag) => (
                       <li className="services__desc services__desc--margin" key={tag}>
-                        <img className="services__svg" src="/assets/images/svg/romb.svg" alt="romb" />
+                        <img className="services__svg" src="/astro-turn/assets/images/svg/romb.svg" alt="romb" />
                         {tag}
                       </li>
                     ))}
