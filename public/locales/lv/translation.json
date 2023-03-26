@@ -1,10 +1,6 @@
 {
-  "testpage": {
-    "title": "Latiši Welcome to my awesome website!",
-    "subtitle": "LV This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
-    "test": "jauns teksts?"
-  },
   "index" : {
+    "metaDesc" : "IT future company",
     "heroTitle": "We’ll get it done. Together.",
     "heroButton": "Show me how",
     "ctaTag": "Things we are good at",
@@ -41,22 +37,13 @@
     "storyContent3": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia. ",
     "storiesBtnText": "Read more",
 
-    "contactsTag": "Contacts",
-    "contactsHeader": "Get in touch",
-    "contactsContent1": "Have a project in mind?",
-    "contactsContent2": " Need a wise advice? ",
-    "contactsContent3": " Want to say hi? ",
-    "contactsContent4": " I excited to talk to you.",
-    "contactsName": "Peteris Jurcenko",
-    "contactsPhone": "+371 23456789",
-    "contactsEmail": "peteris@turn.lv",
-
     "careInfoTag": "Our sustainability initiatives",
     "careInfoTitle": "What we care about",
     "careCard1Content": "Website for every school effortlessly.",
     "careCard2Content": "An inclusive digital environment: a path to sustainable growth"
   },
   "digital": {
+    "metaDesc" : "IT future company",
     "storyHeader": "Digital transformation in a traditional institution on a tight schedule",
     "mainStoryContent": "<p>We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work. Thanks to the e-Saeima platform, plenary sittings can now be held remotely, with MPs participating from outside the parliament premises.</p><h3>Background</h3><p>At the time when the platform was created, the world was different, it was the start of the pandemic, Zoom or other online meeting platforms were not so commonly used as today. Every business was rushing to the online environment, ecommerce was starting to grow exponentially. Even traditional establishments as the parliament had to find a way how to continue the work in the lockdown situation. Actions needed to be taken on the spot.</p><h3>Challenges</h3><p>The parliament of Latvia consists of 100 members, youngest beeing 26 and the oldest 77 years old, with different educational and computer literacy levels. Not only computer skills, but also accessibility requreiments had to be taken into account when designing the platform.</p><p>other constraint was that Rules of Procedure of the Parliament had to be followed thoughtfully when designing the system, and these rules was created long time ago and for offline style of work of course. Business processes were quite complicated as there are several ways how voting can be executed, and even different kind of vote counting is applied in Parliament based on use case. All of this highly regulated process had to be taken into account.</p><h3>Success criteria</h3><p>One of this project’s success criteria and even critical pillar was highly involved team from the Parliament, the executive management. Those were poeple who sincerely wanted a good product to be developed and even spent their evenings devoted to the project.</p><p>We created a close-knit working process, that consisted of three components - regular progress update meetings, daily standups twice per day for the project’s task force and iterative development approach. Also user involvement was a must. Thanks to this work process we were able to deliver first prototype in 1,5 week time, as soon as it was approved by the management, interactive prototype was created and presented to end-users (the members of the Parliament) for evaluation and improvements. As soon as as the feedback was collected, changes done, the prototype was ready to be shipped to implementation. It all took just around 2 weeks calendar time.</p><p>The platform consists of 3 interfaces - 1 for end-users and 2 administrative interfaces. Due to the time restrictions all focus was set on the end-user interface, other interfaces were made just functional and more energy was put into training people to use these interfaces, not to polish them.</p><p>other success criteria was the use of ready-made design system. There was no need to design smallest elements, prototype was created based on already-made elements, just color palette and styling was applied on top of it.</p>",
   
@@ -75,6 +62,7 @@
     "otherStoriesButtonText2": "Read more"
   },
   "user": {
+    "metaDesc" : "IT future company",
     "storyHeader": "User centric approach",
     "mainStoryContent": "<p>We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work. Thanks to the e-Saeima platform, plenary sittings can now be held remotely, with MPs participating from outside the parliament premises.</p><h3>Background</h3><p>At the time when the platform was created, the world was different, it was the start of the pandemic, Zoom or other online meeting platforms were not so commonly used as today. Every business was rushing to the online environment, ecommerce was starting to grow exponentially. Even traditional establishments as the parliament had to find a way how to continue the work in the lockdown situation. Actions needed to be taken on the spot.</p><h3>Challenges</h3><p>The parliament of Latvia consists of 100 members, youngest beeing 26 and the oldest 77 years old, with different educational and computer literacy levels. Not only computer skills, but also accessibility requreiments had to be taken into account when designing the platform.</p><p>other constraint was that Rules of Procedure of the Parliament had to be followed thoughtfully when designing the system, and these rules was created long time ago and for offline style of work of course. Business processes were quite complicated as there are several ways how voting can be executed, and even different kind of vote counting is applied in Parliament based on use case. All of this highly regulated process had to be taken into account.</p><h3>Success criteria</h3><p>One of this project’s success criteria and even critical pillar was highly involved team from the Parliament, the executive management. Those were poeple who sincerely wanted a good product to be developed and even spent their evenings devoted to the project.</p><p>We created a close-knit working process, that consisted of three components - regular progress update meetings, daily standups twice per day for the project’s task force and iterative development approach. Also user involvement was a must. Thanks to this work process we were able to deliver first prototype in 1,5 week time, as soon as it was approved by the management, interactive prototype was created and presented to end-users (the members of the Parliament) for evaluation and improvements. As soon as as the feedback was collected, changes done, the prototype was ready to be shipped to implementation. It all took just around 2 weeks calendar time.</p><p>The platform consists of 3 interfaces - 1 for end-users and 2 administrative interfaces. Due to the time restrictions all focus was set on the end-user interface, other interfaces were made just functional and more energy was put into training people to use these interfaces, not to polish them.</p><p>other success criteria was the use of ready-made design system. There was no need to design smallest elements, prototype was created based on already-made elements, just color palette and styling was applied on top of it.</p>",
   
@@ -93,6 +81,7 @@
     "otherStoriesButtonText2": "Read more"
   },
   "website": {
+    "metaDesc" : "IT future company",
     "storyHeader": "Website redesign",
     "mainStoryContent": "<p>We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work. Thanks to the e-Saeima platform, plenary sittings can now be held remotely, with MPs participating from outside the parliament premises.</p><h3>Background</h3><p>At the time when the platform was created, the world was different, it was the start of the pandemic, Zoom or other online meeting platforms were not so commonly used as today. Every business was rushing to the online environment, ecommerce was starting to grow exponentially. Even traditional establishments as the parliament had to find a way how to continue the work in the lockdown situation. Actions needed to be taken on the spot.</p><h3>Challenges</h3><p>The parliament of Latvia consists of 100 members, youngest beeing 26 and the oldest 77 years old, with different educational and computer literacy levels. Not only computer skills, but also accessibility requreiments had to be taken into account when designing the platform.</p><p>other constraint was that Rules of Procedure of the Parliament had to be followed thoughtfully when designing the system, and these rules was created long time ago and for offline style of work of course. Business processes were quite complicated as there are several ways how voting can be executed, and even different kind of vote counting is applied in Parliament based on use case. All of this highly regulated process had to be taken into account.</p><h3>Success criteria</h3><p>One of this project’s success criteria and even critical pillar was highly involved team from the Parliament, the executive management. Those were poeple who sincerely wanted a good product to be developed and even spent their evenings devoted to the project.</p><p>We created a close-knit working process, that consisted of three components - regular progress update meetings, daily standups twice per day for the project’s task force and iterative development approach. Also user involvement was a must. Thanks to this work process we were able to deliver first prototype in 1,5 week time, as soon as it was approved by the management, interactive prototype was created and presented to end-users (the members of the Parliament) for evaluation and improvements. As soon as as the feedback was collected, changes done, the prototype was ready to be shipped to implementation. It all took just around 2 weeks calendar time.</p><p>The platform consists of 3 interfaces - 1 for end-users and 2 administrative interfaces. Due to the time restrictions all focus was set on the end-user interface, other interfaces were made just functional and more energy was put into training people to use these interfaces, not to polish them.</p><p>other success criteria was the use of ready-made design system. There was no need to design smallest elements, prototype was created based on already-made elements, just color palette and styling was applied on top of it.</p>",
   
@@ -111,6 +100,18 @@
     "otherStoriesButtonText2": "Read more"
   },
   "global": {
+    "metaTitle": "Turn",
+
+    "contactsTag": "Contacts",
+    "contactsHeader": "Get in touch",
+    "contactsContent1": "Have a project in mind?",
+    "contactsContent2": " Need a wise advice? ",
+    "contactsContent3": " Want to say hi? ",
+    "contactsContent4": " I excited to talk to you.",
+    "contactsName": "Peteris Jurcenko",
+    "contactsPhone": "+371 23456789",
+    "contactsEmail": "peteris@turn.lv",
+    
     "footerInformationHeader": "Information",
     "footerCookiePolicy": "Cookie policy",
     "footerAvailability": "Notice of availability",

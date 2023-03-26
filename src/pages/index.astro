@@ -1,5 +1,5 @@
 ---
-import '~styles/styles.scss';
+import "~styles/styles.scss";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header.astro";
 import Hero from "../components/Hero/Hero.jsx";
@@ -17,7 +17,6 @@ const hero = {
     title: t("index.heroTitle"),
     buttonText: t("index.heroButton"),
 };
-
 const cta = {
     tag: t("index.ctaTag"),
     title: t("index.ctaTitle"),
@@ -66,17 +65,6 @@ const stories = {
     StoryContent3: t("index.storyContent3"),
     StoryButtonText: t("index.storiesBtnText")
 };
-const contacts = {
-    tag: t("index.contactsTag"),
-    header: t("index.contactsHeader"),
-    content1: t("index.contactsContent1"),
-    content2: t("index.contactsContent2"),
-    content3: t("index.contactsContent3"),
-    content4: t("index.contactsContent4"),
-    name: t("index.contactsName"),
-    phone: t("index.contactsPhone"),
-    email: t("index.contactsEmail"),
-};
 const careInfo = {
     tag: t("index.careInfoTag"),
     title: t("index.careInfoTitle"),
@@ -85,14 +73,14 @@ const careInfo = {
 };
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={t("global.metaTitle")} desc={t("index.metaDesc")}>
     <Header />
 	<main>
 		<Hero info={hero}/>
 		<Cta info={cta} />
         <Services cards={servicesCards} info={servicesInfo} />
         <Stories info={stories} />
-        <Contacts info={contacts} />
+        <Contacts/>
         <CareInfo info={careInfo} />
         <Footer />
 	</main>
