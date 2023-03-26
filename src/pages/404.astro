@@ -1,4 +1,5 @@
 ---
+import "~styles/styles.scss";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header.astro";
 import Footer from "../components/Footer/Footer.jsx";
@@ -7,9 +8,9 @@ import { t, changeLanguage } from "i18next";
 changeLanguage("lv");
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={t("global.metaTitle")} desc={t("global.errormetaDesc")}>
     <div class="error-page">
-    <Header />
+    <Header client:load/>
     <main class="error-page__block">
         <div class="wrapper">
             <p class="error-page__text">{t("global.errorTag")}</p>
@@ -28,10 +29,6 @@ changeLanguage("lv");
         <div class="error-page__circle error-page__circle--third"></div>
         <div class="error-page__circle error-page__circle--fourth"></div>
     </main>
-    <Footer />
+    <Footer client:load/>
     </div>
 </Layout>
-
-<style lang="scss">
-	@import '../styles/styles.scss';
-</style>

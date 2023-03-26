@@ -101,6 +101,7 @@
   },
   "global": {
     "metaTitle": "Turn",
+    "errormetaDesc": "Oops! Page not found, try different page",
 
     "contactsTag": "Contacts",
     "contactsHeader": "Get in touch",
@@ -111,7 +112,7 @@
     "contactsName": "Peteris Jurcenko",
     "contactsPhone": "+371 23456789",
     "contactsEmail": "peteris@turn.lv",
-    
+
     "footerInformationHeader": "Information",
     "footerCookiePolicy": "Cookie policy",
     "footerAvailability": "Notice of availability",
