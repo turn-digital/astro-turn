@@ -30,11 +30,11 @@ const otherStories = {
 ---
 
 <Layout title={t("global.metaTitle")} desc={t("digital.metaDesc")}>
-	<Header client:load/>
+	<Header/>
 	<main>
-		<MainStory info={mainStory} client:load/>
-		<Contacts client:visible/>
-        <OtherStories info={otherStories}  client:visible/>
+		<MainStory info={mainStory}/>
+		<Contacts/>
+        <OtherStories info={otherStories}/>
         <Footer />
 	</main>
 </Layout>

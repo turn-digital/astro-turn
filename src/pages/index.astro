@@ -74,14 +74,14 @@ const careInfo = {
 ---
 
 <Layout title={t("global.metaTitle")} desc={t("index.metaDesc")}>
-    <Header client:load/>
+    <Header/>
 	<main>
-		<Hero info={hero} client:load/>
-		<Cta info={cta} client:load/>
-        <Services cards={servicesCards} info={servicesInfo} client:visible/>
-        <Stories info={stories} client:visible/>
-        <Contacts client:visible/>
-        <CareInfo info={careInfo} client:visible/>
-        <Footer client:visible/>
+		<Hero info={hero}/>
+		<Cta info={cta}/>
+        <Services cards={servicesCards} info={servicesInfo}/>
+        <Stories info={stories}/>
+        <Contacts/>
+        <CareInfo info={careInfo}/>
+        <Footer/>
 	</main>
 </Layout>
