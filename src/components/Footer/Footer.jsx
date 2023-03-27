@@ -20,7 +20,7 @@ const Footer = () => {
 
           <ul className="footer__list">
             <li className="footer__item">
-              <h5 className="footer__title">{t("global.footerInformationHeader")}</h5>
+              <h3 className="footer__title">{t("global.footerInformationHeader")}</h3>
               <div>
                 <a className="footer__text footer__text--hover" href="/astro-turn/">{t("global.footerCookiePolicy")}</a>
                 <a className="footer__text footer__text--hover" href="/astro-turn/">{t("global.footerAvailability")}</a>
@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
             </li>
             <li className="footer__item">
-              <h5 className="footer__title">{t("global.footerContactsHeader")}</h5>
+              <h3 className="footer__title">{t("global.footerContactsHeader")}</h3>
               <ul>
                 <li>
                   <a className="footer__text footer__text--hover" href={"tel:" + t("global.footerPhone")}>{t("global.footerPhone")}</a>
@@ -36,13 +36,12 @@ const Footer = () => {
                 <li>
                   <a className="footer__text footer__text--hover" href={"mailto:" + t("global.footerEmail")}>{t("global.footerEmail")}</a>
                 </li>
-                <li>
-                  <a className="footer__text footer__text--hover" href="">{t("global.footerAddress")}</a>
+                <li className="footer__text">{t("global.footerAddress")}
                 </li>
               </ul>
             </li>
             <li className="footer__item">
-              <h5 className="footer__title">{t("global.footerCompanyDetailsHeader")}</h5>
+              <h3 className="footer__title">{t("global.footerCompanyDetailsHeader")}</h3>
               <ul>
                 <li className="footer__text">
                   <p className="footer__inline">{t("global.footerSIA")}&nbsp;</p>
