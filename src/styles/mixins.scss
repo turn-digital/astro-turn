@@ -1,4 +1,4 @@
-$default-width: 1400px;
+$default-width: 1440px;
 
 $screen-mobileS: 320px;
 $screen-tablet: 768px;
@@ -75,7 +75,8 @@ $grid-row-gapXL: 36px;
   }
 
   @include size-laptopL(){
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: $default-width;
   }
 }

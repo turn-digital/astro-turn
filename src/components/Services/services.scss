@@ -23,11 +23,6 @@
         &--white {
             color: $color-light-gray
         }
-
-        &--margin {
-            margin-bottom: 32px;
-            margin-top: -190px;
-        }
     }
 
     &__text {
@@ -49,10 +44,10 @@
         margin-bottom: 32px;
     }
 
-    &__list {
-        margin-bottom: 10px;
+    &__box {
         position: relative;
         top: -200px;
+        margin-bottom: -200px; //remove empty space from bottom
     }
 
     &__subtitle {
@@ -65,72 +60,78 @@
     }
 
     &__desc {
-        margin-bottom: 16px;
         color: $color-light-black;
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
         font-family: 'Inter', sans-serif;
-
-        &--margin {
-            margin-bottom: 8px;
-            margin-right: 36px;
-        }
     }
 
     &__tags {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 4px;
+        justify-content: space-between;
+        
+        .services__desc {
+            margin-top: 16px;
+            margin-right: 32px;
+        }
     }
 
     &__svg {
-        margin-right: 12px;
-        vertical-align: middle;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+    }
+
+    &__bottom {
+        .services__title {
+            margin-bottom: 32px;
+        }
     }
 
     @include size-laptop() {
         &__title {
-            width: 70%;
-            font-size: 72px;
-            line-height: 80px;  
-            
-            &--margin {
-                margin-top: -278px;
-            }
-
-            &--desk {
-                font-size: 40px;
-                line-height: 56px;
-            }
+            width: 65%;
+            font-size: 56px;
+            line-height: 64px;
         }
 
         &__text {
-            font-size: 28px;
-            line-height: 48px;
+            font-size: 24px;
+            line-height: 40px;
         }
 
         &__subtitle {
-            font-size: 40px;
-            line-height: 56px;
+            font-size: 32px;
+            line-height: 48px;
             margin-bottom: 48px;
         }
 
         &__desc {
-            font-size: 20px;
-            line-height: 40px;
-            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 32px;
+        }
 
-            &--margin {
-                margin-right: 32px;
-            }
+        &__box {
+            top: -300px;
+            margin-bottom: -300px; //remove empty space from bottom
         }
 
         &__list {
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 64px;
-            top: -300px;
+        }
+
+        &__bottom {
+            margin-top: 16px;
+            padding: 0 40px;
+            
+            .services__title {
+                font-size: 32px;
+                line-height: 48px;
+            }
         }
 
         &__item {
@@ -139,7 +140,7 @@
         }
 
         &__bg-top {
-            padding: 128px 0 456px;
+            padding: 128px 0 400px;
         }
 
         &__bg-bottom {

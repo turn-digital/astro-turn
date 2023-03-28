@@ -1,14 +1,5 @@
 import React from "preact";
-// import { Link } from "gatsby";
-// import imageFirst from "../../assets/images/svg/eSaeima.svg";
-// import imageSecond from "../../assets/images/svg/tiesibsargs.svg";
-// import imageThird from "../../assets/images/svg/csp.svg";
-// import imageFourth from "../../assets/images/svg/cfla.svg";
-// import imageFiveth from "../../assets/images/svg/trl.svg";
-// import imageSixth from "../../assets/images/svg/galerijaCentrs.svg";
-// import imageSeventh from "../../assets/images/svg/eParaksts.svg";
-// import imageEight from "../../assets/images/svg/eSilva.svg";
-// import { img } from "gatsby-plugin-image";
+import Tag from "../Tag/Tag.jsx"
 
 const Stories = (props) => {
   const {
@@ -26,10 +17,7 @@ const Stories = (props) => {
     <>
       <section id="story" className="stories">
         <div className="wrapper">
-          <div>
-          <img  className="icon__slash" src="/astro-turn/assets/images/svg/slash-line.svg" alt="slash line" />
-          <p className="stories__text">{tag}</p>
-          </div>
+          <Tag info={{title:tag}}/>
           <h2 className="stories__title">{title}</h2>
           <ul className="stories__list">
             <li className="stories__item stories__item--first stories__box">

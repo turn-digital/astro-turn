@@ -22,15 +22,6 @@
         font-size: 20px;
         line-height: 36px;
         text-decoration: none;
-        margin-bottom: 8px;
-        
-        &--margin {
-            margin-top: 40px;
-        }
-
-        &--inline {
-            display: inline-block;
-        }
 
         &--hover {
             &:hover {
@@ -52,23 +43,17 @@
    
 
     @include size-laptop() {
-        padding: 160px 0;
+        padding: 120px 0;
     
         &__title {
             margin: 48px 0;
-            font-size: 72px;
-            line-height: 80px;
+            font-size: 56px;
+            line-height: 64px;
         }
     
         &__text {
-            display: inline-block;
-            font-size: 28px;
-            line-height: 48px;
-
-            &--margin {
-                margin-bottom: 40px;
-                margin-top: 0;
-            }
+            font-size: 24px;
+            line-height: 40px;
         }
 
         &__circle {

@@ -1,14 +1,14 @@
 {
   "index" : {
     "metaDesc" : "IT future company",
-    "heroTitle": "We’ll get it done. Together.",
+    "heroTitle": "<span>We’ll get it done.</span><span>Together.</span>",
     "heroButton": "Show me how",
     "ctaTag": "Things we are good at",
     "ctaTitle": "Designing a culture of continuous improvement",
     "ctaContent": "We are dedicated to helping organizations conceive their value adding opportunities and create their own digital transformationsuccess stories.",
 
     "serviceTag": "Services",
-    "serviceTitle": "Ways we help you to achieve your goals",
+    "serviceTitle": "Ways we help you </br> to achieve your goals",
     "serviceSubtitle": "Practical results",
     "serviceContent": "We deliver practical results quickly thanks to our in-house team of UX&UI designers and programmers. By having all the necessary skill set and expertise under one roof, we streamline the development process and get your projects off the ground fast.",
 
@@ -35,7 +35,7 @@
     "storyContent1": "We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work.",
     "storyContent2": "One of our core values is people. We put strong focus and effort on making digital services and products easily accessible, usable and comprehensible for everyone. ",
     "storyContent3": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia. ",
-    "storiesBtnText": "Read more",
+    "storiesBtnText": "View story",
 
     "careInfoTag": "Our sustainability initiatives",
     "careInfoTitle": "What we care about",
@@ -57,9 +57,7 @@
     "otherStoriesTitle1": "Introducing user-centric approach in a financial institution",
     "otherStoriesTitle2": "Business system redesign",
     "otherStoriesContent1": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-    "otherStoriesButtonText1": "Read more",
-    "otherStoriesButtonText2": "Read more"
+    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing."
   },
   "user": {
     "metaDesc" : "IT future company",
@@ -76,9 +74,7 @@
     "otherStoriesTitle1": "Introducing user-centric approach in a financial institution",
     "otherStoriesTitle2": "Business system redesign",
     "otherStoriesContent1": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-    "otherStoriesButtonText1": "Read more",
-    "otherStoriesButtonText2": "Read more"
+    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing."
   },
   "website": {
     "metaDesc" : "IT future company",
@@ -95,20 +91,16 @@
     "otherStoriesTitle1": "Introducing user-centric approach in a financial institution",
     "otherStoriesTitle2": "Business system redesign",
     "otherStoriesContent1": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-    "otherStoriesButtonText1": "Read more",
-    "otherStoriesButtonText2": "Read more"
+    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing."
   },
   "global": {
     "metaTitle": "Turn",
     "errormetaDesc": "Oops! Page not found, try different page",
+    "viewStory": "View story",
 
     "contactsTag": "Contacts",
     "contactsHeader": "Get in touch",
-    "contactsContent1": "Have a project in mind?",
-    "contactsContent2": " Need a wise advice? ",
-    "contactsContent3": " Want to say hi? ",
-    "contactsContent4": " I excited to talk to you.",
+    "contactsContent": "<span>Have a project in mind?</span> <span>Need a wise advice?</span> <span>Want to say hi?</span> <span>I excited to talk to you.</span>",
     "contactsName": "Peteris Jurcenko",
     "contactsPhone": "+371 23456789",
     "contactsEmail": "peteris@turn.lv",

@@ -8,8 +8,7 @@ const OtherStories = (props) => {
     story2Header,
     story1Content,
     story2Content,
-    story1ButtonText,
-    story2ButtonText,
+    viewStory,
   } = props.info;
 
   return (
@@ -29,7 +28,7 @@ const OtherStories = (props) => {
                   className="other-stories__link"
                   href={"/astro-turn/user-centric-approach"}
                 >
-                  {story1ButtonText}
+                  {viewStory}
                   <img className="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" />
                 </a>
             </li>
@@ -40,7 +39,7 @@ const OtherStories = (props) => {
                   className="other-stories__link"
                   href={"/astro-turn/website-redesign"}
                 >
-                  {story2ButtonText}
+                  {viewStory}
                   <img className="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" />
                 </a>
             </li>
