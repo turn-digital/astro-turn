@@ -100,7 +100,10 @@
 
     "contactsTag": "Contacts",
     "contactsHeader": "Get in touch",
-    "contactsContent1": "<span>Have a project in mind?</span> <span>Need a wise advice?</span> <span>Want to say hi?</span> <span>I excited to talk to you.</span>",
+    "contactsContent1": "Have a project in mind?",
+    "contactsContent2": "Need a wise advice?",
+    "contactsContent3": "Want to say hi?",
+    "contactsContent4": "We are excited to talk to you!",
     "contactsName": "Peteris Jurcenko",
     "contactsPhone": "+371 23456789",
     "contactsEmail": "peteris@turn.lv",
