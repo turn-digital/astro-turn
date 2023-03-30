@@ -40,7 +40,9 @@
         }
     }
 
-   
+    &__info {
+        margin-top: 40px;
+    }
 
     @include size-laptop() {
         padding: 120px 0;

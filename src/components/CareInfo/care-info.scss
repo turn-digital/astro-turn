@@ -61,17 +61,18 @@
     }
 
     &__svg {
+        position: relative;
+        top: 4px;
         margin-left: 14px;
-        vertical-align: top;
     }
 
     @include size-laptop() {
-        padding: 160px 0;
+        padding: 160px 0 176px;
     
         &__title {
-            margin-bottom: 96px;
-            font-size: 72px;
-            line-height: 80px;
+            margin-bottom: 80px;
+            font-size: 56px;
+            line-height: 64px;
         }
     
         &__text {
@@ -92,20 +93,15 @@
 
         &__desc {
             padding: 0;
-            font-size: 20px;
-            line-height: 40px;
+            font-size: 16px;
+            line-height: 32px;
         }
 
         &__link {
             padding: 10px;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 32px;
             margin-left: auto;
         }
-
-        &__svg {
-            vertical-align: text-top;
-        }
-
     }
 }

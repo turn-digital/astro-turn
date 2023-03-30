@@ -80,7 +80,7 @@
     }
 
     @include size-laptop() { 
-        padding: 160px 0;
+        padding: 160px 0 110px;
 
         &__list {
             display: grid;
@@ -99,8 +99,9 @@
         }
 
         &__title {
-            font-size: 72px;
-            line-height: 80px;
+            margin-top: 32px;
+            font-size: 56px;
+            line-height: 64px;
             margin-bottom: 80px;
         }
 
@@ -111,8 +112,8 @@
         }
 
         &__desc {
-            font-size: 20px;
-            line-height: 40px;
+            font-size: 16px;
+            line-height: 32px;
             margin-bottom: 48px;
         }
 

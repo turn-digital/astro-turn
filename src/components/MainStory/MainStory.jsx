@@ -10,8 +10,7 @@ const MainStory = (props) => {
     workingWithTitle,
   } = props.info;
   return (
-    <>
-      <section className="main-story">
+    <section className="main-story">
       <div className="wrapper">
       <h1 className="main-story__title">{storyHeader}</h1>
       <div className="main-story__block">
@@ -24,7 +23,7 @@ const MainStory = (props) => {
         </aside>
         <div className="main-story__box">
           <div className="main-story__content" dangerouslySetInnerHTML={{ __html: mainStoryContent }}></div>
-          <div className="main-story__content"><StoryResult title={resultTitle} content={resultContent} /></div>
+          <StoryResult title={resultTitle} content={resultContent} />
           <h3 className="main-story__subtitle">{workingWithTitle}</h3>
           <ul className="main-story__list">
             <li>
@@ -45,8 +44,7 @@ const MainStory = (props) => {
         </div>
         </div>
       </div> 
-      </section>
-    </>
+    </section>
   );
 };
 export default MainStory;

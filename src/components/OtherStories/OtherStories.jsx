@@ -1,4 +1,5 @@
 import React from "preact";
+import Tag from "../Tag/Tag.jsx"
 
 const OtherStories = (props) => {
   const {
@@ -12,13 +13,9 @@ const OtherStories = (props) => {
   } = props.info;
 
   return (
-    <>
     <section id="stories" className="other-stories">
       <div className="wrapper">
-      <div>
-          <img  className="icon__slash" src="/astro-turn/assets/images/svg/slash-line.svg" alt="slash line" />
-          <p className="other-stories__text">{tag}</p>
-          </div>
+        <Tag info={{title:tag}}/>
         <h2 className="other-stories__title">{title}</h2>
         <ul className="other-stories__list">
             <li className="other-stories__item">
@@ -46,7 +43,6 @@ const OtherStories = (props) => {
         </ul>
       </div>
     </section>
-    </>
   );
 };
 export default OtherStories;

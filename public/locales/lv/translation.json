@@ -100,10 +100,7 @@
 
     "contactsTag": "Contacts",
     "contactsHeader": "Get in touch",
-    "contactsContent1": "Have a project in mind?",
-    "contactsContent2": "Need a wise advice?",
-    "contactsContent3": "Want to say hi?",
-    "contactsContent4": "We are excited to talk to you!",
+    "contactsContent": "<span>Have a project in mind?</span> <span>Need a wise advice?</span> <span>Want to say hi?</span> <span>We are excited to talk to you!</span>",
     "contactsName": "Peteris Jurcenko",
     "contactsPhone": "+371 23456789",
     "contactsEmail": "peteris@turn.lv",
@@ -122,7 +119,7 @@
     "footerBANK": "Bank: Swedbank A/S,",
     "footerSWIFT": "S.W.I.F.T.: HABALV22",
     "footerACCOUNT": "Account: LV48HABA0551042639577",
-    "footerCopyright": "© 2023 Turn Digital, Latvia",
+    "footerCopyright": "Turn Digital, Latvia",
 
     "headerHome": "Home",
     "headerStory": "Story",

@@ -21,8 +21,8 @@
       text-decoration: none;
       color: $color-light-gray;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 40px;
+      font-size: 16px;
+      line-height: 32px;
       border-bottom: 2px solid transparent;
       font-family: 'Inter', sans-serif;
 
@@ -88,8 +88,16 @@
       box-shadow: 0 0 0 2px $color-green;
   }
 
+  &__copy {
+    color: $color-light-gray;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
   @include size-tablet() {
-      padding: 160px 0 105px;
+      padding: 130px 0 88px;
 
       &__nav {
           display: block;
@@ -121,13 +129,13 @@
       }
 
       &__text {
-          font-size: 20px;
-          line-height: 40px;
+        font-size: 20px;
+        line-height: 40px;
       }
 
       &__title {
-          font-size: 20px;
-          line-height: 40px;
+        font-size: 16px;
+        line-height: 32px;
       }
 
       &__inline {
