@@ -57,10 +57,17 @@
         }
     }
 
-    &__logo:focus-visible {
-        outline: none;
-        text-decoration: underline;
-        box-shadow: 0 0 0 2px $color-green;
+    &__logo {
+        img {
+            width: 102px;
+            height: 40px;
+        }
+
+        &:focus-visible {
+            outline: none;
+            text-decoration: underline;
+            box-shadow: 0 0 0 2px $color-green;
+        }
     }
 
     &__img {
