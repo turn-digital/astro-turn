@@ -26,7 +26,7 @@ const OtherStories = (props) => {
                   href={"/astro-turn/user-centric-approach"}
                 >
                   {viewStory}
-                  <img className="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" />
+                  <img className="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" height="20px" width="14px"/>
                 </a>
             </li>
             <li className="other-stories__item">
@@ -37,7 +37,7 @@ const OtherStories = (props) => {
                   href={"/astro-turn/website-redesign"}
                 >
                   {viewStory}
-                  <img className="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" />
+                  <img className="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" height="20px" width="14px"/>
                 </a>
             </li>
         </ul>

@@ -1,13 +1,16 @@
 ---
 import { Modal } from 'accessible-astro-components'
 import { t, changeLanguage } from "i18next";
+import { Image } from '@astrojs/image/components';
 
 changeLanguage("lv");
 ---
 
 <div class="wrapper">
   <header class="header">
-    <a class="header__logo"  href="/astro-turn/"><img class="header__img" src="/astro-turn/assets/images/logo-header.png" alt="logo" /></a>
+    <a class="header__logo"  href="/astro-turn/">
+      <Image src="/astro-turn/assets/images/logo-header.png" alt="logo" width={102} height={40} />
+    </a>
     <div class="header__menu">
       <div>
       <Modal
@@ -15,12 +18,14 @@ changeLanguage("lv");
         class="header__menu--mob wrapper"
         >
         <div class="header__box">
-        <a class="header__logo" href="/astro-turn/" onclick="closeModal()"><img class="header__img" src="/astro-turn/assets/images/logo-header.png" alt="logo" /></a>
+          <a class="header__logo" href="/astro-turn/" onclick="closeModal()">
+            <Image src="/astro-turn/assets/images/logo-header.png" alt="logo" width={102} height={40} />
+          </a>
           <button
             class="header__button header__button--close"
             onclick="closeModal()"
           >
-            <img  src="/astro-turn/assets/images/svg/menu-close.svg" alt="menu close" />
+            <Image src="/astro-turn/assets/images/svg/menu-close.svg" alt="menu close" width={40} height={40} />
           </button>
         </div>
         <nav class="header__nav header__nav--mob">
@@ -43,7 +48,7 @@ changeLanguage("lv");
       class="header__button header__button--mob"
       id="modal-header--mob"
     >
-      <img  src="/astro-turn/assets/images/svg/menu.svg" alt="menu open" />
+      <Image src="/astro-turn/assets/images/svg/menu.svg" alt="menu open" width={38} height={26} />
     </button>
   </header>
 </div>

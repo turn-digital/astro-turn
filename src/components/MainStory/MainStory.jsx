@@ -19,6 +19,8 @@ const MainStory = (props) => {
           className="main-story__fit"
           src="/astro-turn/assets/images/svg/eSaeima--mob.svg"
             alt="e-Saeima"
+            width="200px"
+            height="100px"
           />
         </aside>
         <div className="main-story__box">
@@ -31,6 +33,8 @@ const MainStory = (props) => {
               className="main-story__img"
               src="/astro-turn/assets/images/svg/tiesibsargs.svg"
               alt="Tiesibsargs"
+              width="200px"
+              height="100px"
               />    
             </li>
             <li>
@@ -38,6 +42,8 @@ const MainStory = (props) => {
               className="main-story__img"
               src="/astro-turn/assets/images/svg/csp.svg"
               alt="CSP"
+              width="200px"
+              height="100px"
               />    
             </li>
           </ul>

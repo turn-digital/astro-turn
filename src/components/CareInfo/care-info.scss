@@ -30,6 +30,11 @@
         &:first-child {
             margin-bottom: 32px;
         }
+
+        img {
+            width: auto;
+            height: auto;
+        }
     }
 
     &__desc {

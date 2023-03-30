@@ -27,7 +27,7 @@ const Services = (props) => {
                     <ul className="services__tags">
                       {card.tags.split(",").map((tag) => (
                         <li className="services__desc services__desc--margin" key={tag}>
-                          <img className="services__svg" src="/astro-turn/assets/images/svg/romb.svg" alt="romb" />
+                          <img className="services__svg" src="/astro-turn/assets/images/svg/romb.svg" alt="romb" height="16px" width="16px"/>
                           {tag}
                         </li>
                       ))}

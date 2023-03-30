@@ -15,6 +15,7 @@ const CareInfo = (props) => {
               className="care-info__img"
               src="/astro-turn/assets/images/logo-schoolio.png"
               alt="logo schoolio WP"
+              width="235px" height="48px"
             />
             </a>
             <p className="care-info__desc">{Card1Content}</p>
@@ -25,7 +26,7 @@ const CareInfo = (props) => {
               href="https://www.schooliowp.lv"
             >
               www.schooliowp.lv
-              <img className="care-info__svg" src="/astro-turn/assets/images/svg/blank-link.svg" alt="www.schooliowp.lv link" />
+              <img className="care-info__svg" src="/astro-turn/assets/images/svg/blank-link.svg" alt="www.schooliowp.lv link" width="22px" height="22px"/>
             </a>
           </li>
           <li className="care-info__item">
@@ -34,6 +35,7 @@ const CareInfo = (props) => {
               className="care-info__img"
               src="/astro-turn/assets/images/logo-pieklustamiba.png"
               alt="logo Pieklustamiba"
+              width="235px" height="48px"
             />
             </a>
             <p className="care-info__desc">{Card2Content}</p>
@@ -44,7 +46,7 @@ const CareInfo = (props) => {
               href="https://www.pieklustamiba.lv"
             >
               www.pieklustamiba.lv
-              <img className="care-info__svg" src="/astro-turn/assets/images/svg/blank-link.svg" alt="https://www.pieklustamiba.lv link" />
+              <img className="care-info__svg" src="/astro-turn/assets/images/svg/blank-link.svg" alt="https://www.pieklustamiba.lv link" width="22px" height="22px"/>
             </a>
           </li>
         </ul>
