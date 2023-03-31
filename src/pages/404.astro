@@ -3,6 +3,7 @@ import "~styles/styles.scss";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header.astro";
 import Footer from "../components/Footer/Footer.astro";
+import Tag from "../components/Tag/Tag.jsx"
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("lv");
@@ -13,7 +14,7 @@ changeLanguage("lv");
     <Header/>
     <main class="error-page__block">
         <div class="wrapper">
-            <p class="error-page__text">{t("global.errorTag")}</p>
+            <Tag info={{title:t("global.errorTag")}}/>
             <h1 class="error-page__title">{t("global.errorTitle")}</h1>
             <p class="error-page__text">{t("global.errorText")}</p>
             <a

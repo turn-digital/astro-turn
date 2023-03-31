@@ -14,7 +14,6 @@ const Stories = (props) => {
     StoryButtonText
   } = props.info;
   return (
-    <>
       <section id="story" className="stories">
         <div className="wrapper">
           <Tag info={{title:tag}}/>
@@ -91,7 +90,6 @@ const Stories = (props) => {
           </ul>
         </div>
       </section>
-    </>
   );
 };
 
