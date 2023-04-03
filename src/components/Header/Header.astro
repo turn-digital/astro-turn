@@ -12,30 +12,6 @@ changeLanguage("lv");
       <Image src="/astro-turn/assets/images/logo-header.png" alt="logo" width={153} height={60} />
     </a>
     <div class="header__menu">
-      <div>
-      <Modal
-        triggerId="modal-header--mob"
-        class="header__menu--mob wrapper"
-        >
-        <div class="header__box">
-          <a class="header__logo" href="/astro-turn/" onclick="closeModal()">
-            <Image src="/astro-turn/assets/images/logo-header.png" alt="logo" width={153} height={60} />
-          </a>
-          <button
-            class="header__button header__button--close"
-            onclick="closeModal()"
-          >
-            <Image src="/astro-turn/assets/images/svg/menu-close.svg" alt="menu close" width={40} height={40} />
-          </button>
-        </div>
-        <nav class="header__nav header__nav--mob">
-        <a class="header__link" href="/astro-turn/" onclick="closeModal()">{t("global.headerHome")}</a>
-        <a class="header__link "href="/astro-turn/#story"  onclick="closeModal()">{t("global.headerStory")}</a>
-        <a class="header__link" href="/astro-turn/#services" onclick="closeModal()">{t("global.headerServices")}</a>
-        <a class="header__link" href="/astro-turn/#contacts" onclick="closeModal()">{t("global.headerContacts")}</a>
-        </nav>
-      </Modal>
-      </div>
       <nav class="header__nav header__nav--desc">
         <a class="header__link" href="/astro-turn/">{t("global.headerHome")}</a>
         <a class="header__link "href="/astro-turn/#story"  onclick="closeModal()">{t("global.headerStory")}</a>
@@ -52,3 +28,32 @@ changeLanguage("lv");
     </button>
   </header>
 </div>
+
+<Modal
+triggerId="modal-header--mob"
+class="header__menu--mob wrapper"
+>
+  <div class="header__box">
+    <a class="header__logo" href="/astro-turn/" onclick="closeModal()">
+      <Image src="/astro-turn/assets/images/logo-header.png" alt="logo" width={153} height={60} />
+    </a>
+    <button
+      class="header__button header__button--close"
+      onclick="closeModal()"
+    >
+      <Image src="/astro-turn/assets/images/svg/menu-close.svg" alt="menu close" width={40} height={40} />
+    </button>
+  </div>
+  <nav class="header__nav header__nav--mob">
+    <a class="header__link" href="/astro-turn/" onclick="closeModal()">{t("global.headerHome")}</a>
+    <a class="header__link "href="/astro-turn/#story"  onclick="closeModal()">{t("global.headerStory")}</a>
+    <a class="header__link" href="/astro-turn/#services" onclick="closeModal()">{t("global.headerServices")}</a>
+    <a class="header__link" href="/astro-turn/#contacts" onclick="closeModal()">{t("global.headerContacts")}</a>
+  </nav>
+</Modal>
+
+<style >
+  .modal__close {
+    background-color: red;
+  }
+</style>
