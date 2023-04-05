@@ -67,14 +67,11 @@
         font-family: 'Inter', sans-serif;
     }
 
-    &__tags {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
+    &__tags {        
         .services__desc {
             margin-top: 16px;
             margin-right: 32px;
+            display: inline-block;
         }
     }
 

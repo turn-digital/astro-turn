@@ -1,6 +1,5 @@
 ---
 import { t, changeLanguage } from "i18next";
-import { Image } from '@astrojs/image/components';
 changeLanguage("lv");
 ---
 
@@ -8,7 +7,12 @@ changeLanguage("lv");
   <div class="wrapper">
     <div class="footer__box">
     <a class="footer__logo" href="/astro-turn/">
-      <Image src="/astro-turn/assets/images/logo-footer.png" alt="logo" width={102} height={40} />
+      <img
+        src="/astro-turn/assets/images/svg/logo--white.svg"
+        alt="logo"
+        width="102px"
+        height="40px"
+      />
     </a>
     <nav class="footer__nav">
       <a class="footer__link" href="/astro-turn/">{t("global.headerHome")}</a>

@@ -38,6 +38,10 @@
         &--bold {
             font-weight: 700;
         }
+
+        span {
+            display: block;
+        }
     }
 
     &__info {
@@ -56,6 +60,10 @@
         &__text {
             font-size: 24px;
             line-height: 40px;
+
+            span {
+                display: inline-block;
+            }
         }
 
         &__circle {
