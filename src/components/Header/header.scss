@@ -127,15 +127,43 @@
 
     &__close {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 42px;
+        right: 42px;
+        z-index: 1;
         display: block;
         width: 40px;
         height: 40px;
-        background-image: "/assets/images/menu-close.svg";
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        cursor: pointer;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            right:0;
+            width: 40px;
+            height: 40px;
+            background-image: url('/astro-turn/assets/images/svg/menu-close.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            content:"";
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            color: transparent;
+            border-radius: 0;
+
+            &:focus {
+                background-color: transparent;
+            }
+
+            &:focus-visible {
+                outline: none;
+                box-shadow: 0 0 0 2px $color-green;
+            }
+        }
     }
 
     .header {

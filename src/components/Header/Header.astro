@@ -40,6 +40,7 @@ changeLanguage("lv");
 <Modal
 triggerId="modal-header--mob"
 class="header__menu--mob wrapper"
+closeText={t("global.close")}
 >
   <div class="header__box">
     <a class="header__logo" href="/astro-turn/" onclick="closeModal()">
@@ -50,17 +51,6 @@ class="header__menu--mob wrapper"
         height="60px"
       />
     </a>
-    <button
-      class="header__button header__button--close"
-      onclick="closeModal()"
-    >
-      <img
-        src="/astro-turn/assets/images/svg/menu-close.svg"
-        alt="menu close"
-        width="40px"
-        height="40px"
-    />
-    </button>
   </div>
   <nav class="header__nav header__nav--mob">
     <a class="header__link" href="/astro-turn/" onclick="closeModal()">{t("global.headerHome")}</a>
@@ -69,9 +59,3 @@ class="header__menu--mob wrapper"
     <a class="header__link" href="/astro-turn/#contacts" onclick="closeModal()">{t("global.headerContacts")}</a>
   </nav>
 </Modal>
-
-<style >
-  .modal__close {
-    background-color: red;
-  }
-</style>
