@@ -6,42 +6,59 @@ changeLanguage("lv");
 <footer class="footer">
   <div class="wrapper">
     <div class="footer__box">
-    <a class="footer__logo" href="/astro-turn/">
-      <img
-        src="/astro-turn/assets/images/svg/logo--white.svg"
-        alt="logo"
-        width="102px"
-        height="40px"
-      />
-    </a>
-    <nav class="footer__nav">
-      <a class="footer__link" href="/astro-turn/">{t("global.headerHome")}</a>
-      <a class="footer__link" href="/astro-turn/#story">{t("global.headerStory")}</a>
-      <a class="footer__link" href="/astro-turn/#services">{t("global.headerServices")}</a>
-      <a class="footer__link" href="/astro-turn/#contacts">{t("global.headerContacts")}</a>
-    </nav>          
+      <a class="footer__logo" href="/">
+        <img
+          src="/assets/images/svg/logo--white.svg"
+          alt="logo"
+          width="102px"
+          height="40px"
+        />
+      </a>
+      <nav class="footer__nav">
+        <a class="footer__link" href="/">{t("global.headerHome")}</a>
+        <a class="footer__link" href="/#story">{t("global.headerStory")}</a>
+        <a class="footer__link" href="/#services"
+          >{t("global.headerServices")}</a
+        >
+        <a class="footer__link" href="/#contacts"
+          >{t("global.headerContacts")}</a
+        >
+      </nav>
     </div>
 
     <ul class="footer__list">
       <li class="footer__item">
         <h3 class="footer__title">{t("global.footerInformationHeader")}</h3>
         <div>
-          <a class="footer__text footer__text--hover" href="/astro-turn/">{t("global.footerCookiePolicy")}</a>
-          <a class="footer__text footer__text--hover" href="/astro-turn/">{t("global.footerAvailability")}</a>
-          <a class="footer__text footer__text--hover" href="/astro-turn/">{t("global.footerPrivacyPolicy")}</a>
+          <a class="footer__text footer__text--hover" href="/"
+            >{t("global.footerCookiePolicy")}</a
+          >
+          <a class="footer__text footer__text--hover" href="/"
+            >{t("global.footerAvailability")}</a
+          >
+          <a class="footer__text footer__text--hover" href="/"
+            >{t("global.footerPrivacyPolicy")}</a
+          >
         </div>
       </li>
       <li class="footer__item">
         <h3 class="footer__title">{t("global.footerContactsHeader")}</h3>
         <ul>
           <li>
-            <a class="footer__text footer__text--hover" href={"tel:" + t("global.footerPhone")}>{t("global.footerPhone")}</a>
+            <a
+              class="footer__text footer__text--hover"
+              href={"tel:" + t("global.footerPhone")}
+              >{t("global.footerPhone")}</a
+            >
           </li>
           <li>
-            <a class="footer__text footer__text--hover" href={"mailto:" + t("global.footerEmail")}>{t("global.footerEmail")}</a>
+            <a
+              class="footer__text footer__text--hover"
+              href={"mailto:" + t("global.footerEmail")}
+              >{t("global.footerEmail")}</a
+            >
           </li>
-          <li class="footer__text">{t("global.footerAddress")}
-          </li>
+          <li class="footer__text">{t("global.footerAddress")}</li>
         </ul>
       </li>
       <li class="footer__item">
@@ -59,13 +76,16 @@ changeLanguage("lv");
         </ul>
       </li>
     </ul>
-    <p class="footer__copy">©<span id="js-current-year"></span> {t("global.footerCopyright")}</p>
+    <p class="footer__copy">
+      ©<span id="js-current-year"></span>
+      {t("global.footerCopyright")}
+    </p>
   </div>
 </footer>
 
 <script>
   // Find our component DOM on the page.
   const button = document.getElementById("js-current-year");
-  let date =  new Date().getFullYear();
-  button.innerHTML= date.toString();
+  let date = new Date().getFullYear();
+  button.innerHTML = date.toString();
 </script>

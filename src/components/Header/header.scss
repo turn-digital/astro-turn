@@ -2,193 +2,191 @@
 @use "../../styles/mixins" as *;
 
 .header {
-    padding: 40px 0;
-    background-color: $color-light-gray;
-    display: flex;
-    justify-content: space-between;
+  padding: 40px 0;
+  background-color: $color-light-gray;
+  display: flex;
+  justify-content: space-between;
 
+  &__button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 0 2px $color-green;
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $color-green;
+    }
+  }
+
+  &__nav {
+    [aria-current="page"] {
+      border-bottom: 2px solid $color-green;
+    }
+
+    &--desc {
+      display: none;
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid $color-green;
+  }
+
+  &__link {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: $color-light-black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid $color-green;
+    }
+
+    &:focus-visible {
+      outline: none;
+      text-decoration: underline;
+      box-shadow: 0 0 0 2px $color-green;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 102px;
+      height: 40px;
+    }
+
+    &:focus-visible {
+      outline: none;
+      text-decoration: underline;
+      box-shadow: 0 0 0 2px $color-green;
+    }
+  }
+
+  &__img {
+    max-height: 32px;
+  }
+
+  @include size-laptop() {
+    padding: 48px 0 8px;
     &__button {
-        outline: none;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-
-        &:hover {
-            box-shadow: 0 0 0 2px $color-green;
-        }
-
-        &:focus-visible {
-            box-shadow: 0 0 0 2px $color-green;
-        }
+      display: none;
     }
 
     &__nav {
-        [aria-current="page"] {
-            border-bottom: 2px solid $color-green;
-        }
+      padding: 0;
+      background-color: transparent;
+      position: relative;
+      flex-direction: row;
 
-        &--desc {
-            display: none;
-        }
+      &--desc {
+        display: block;
+      }
+
+      &--mob {
+        display: none;
+      }
     }
-
-    .active {
-        border-bottom: 2px solid $color-green;
-    }
-
 
     &__link {
-        font-family: 'Inter', sans-serif;
-        text-decoration: none;
-        color: $color-light-black;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 40px;
-        border-bottom: 2px solid transparent;
-
-        &:hover {
-            border-bottom: 2px solid $color-green;
-        }
-
-        &:focus-visible {
-            outline: none;
-            text-decoration: underline;
-            box-shadow: 0 0 0 2px $color-green;
-        }
+      margin-left: 32px;
+      padding-bottom: 6px;
     }
 
-    &__logo {
-        img {
-            width: 102px;
-            height: 40px;
-        }
+    &__button--mob {
+      display: none;
+    }
 
-        &:focus-visible {
-            outline: none;
-            text-decoration: underline;
-            box-shadow: 0 0 0 2px $color-green;
-        }
+    &__menu--mob {
+      display: none;
     }
 
     &__img {
-        max-height: 32px;
+      max-height: 40px;
     }
-
-    @include size-laptop() {
-        padding: 48px 0 8px;
-        &__button {
-            display: none;
-        }
-
-        &__nav {
-            padding: 0;
-            background-color: transparent;
-            position: relative;
-            flex-direction: row;
-
-            &--desc {
-                display: block;
-            }
-
-            &--mob {
-                display: none;
-            }
-        }
-
-        &__link {
-            margin-left: 32px;
-            padding-bottom: 6px;
-        }
-
-        &__button--mob {
-            display: none;
-        }
-
-        &__menu--mob {
-            display: none;
-        }
-
-        &__img {
-            max-height: 40px;
-        }
-    }
-
+  }
 }
 
 .modal-is-active .modal {
-    &__inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 0;
-        background-color:$color-light-black;
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: $color-light-black;
+  }
+
+  &__close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("/assets/images/svg/menu-close.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
     }
 
-    &__close {
-        position: absolute;
-        top: 42px;
-        right: 42px;
-        z-index: 1;
-        display: block;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
+    button {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      color: transparent;
+      border-radius: 0;
 
-        &:after {
-            position: absolute;
-            top: 0;
-            right:0;
-            width: 40px;
-            height: 40px;
-            background-image: url('/astro-turn/assets/images/svg/menu-close.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            content:"";
-        }
+      &:focus {
+        background-color: transparent;
+      }
 
-        button {
-            width: 40px;
-            height: 40px;
-            background-color: transparent;
-            color: transparent;
-            border-radius: 0;
+      &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px $color-green;
+      }
+    }
+  }
 
-            &:focus {
-                background-color: transparent;
-            }
-
-            &:focus-visible {
-                outline: none;
-                box-shadow: 0 0 0 2px $color-green;
-            }
-        }
+  .header {
+    &__link {
+      color: $color-light-gray;
+      margin-bottom: 24px;
+      font-size: 16px;
+      line-height: 32px;
     }
 
-    .header {
-        &__link {
-            color: $color-light-gray;
-            margin-bottom: 24px;
-            font-size: 16px;
-            line-height: 32px;
-        }
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
-        &__nav {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-    
-            &--desc {
-                display: none;
-            }
-        }
-
-        &__box {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-             margin-bottom: 40px;
-        }
+      &--desc {
+        display: none;
+      }
     }
+
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+  }
 }

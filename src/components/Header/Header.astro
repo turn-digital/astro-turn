@@ -1,14 +1,14 @@
 ---
-import { Modal } from 'accessible-astro-components'
+import { Modal } from "accessible-astro-components";
 import { t, changeLanguage } from "i18next";
 changeLanguage("lv");
 ---
 
 <div class="wrapper">
   <header class="header">
-    <a class="header__logo"  href="/astro-turn/">
+    <a class="header__logo" href="/">
       <img
-        src="/astro-turn/assets/images/svg/logo.svg"
+        src="/assets/images/svg/logo.svg"
         alt="logo"
         width="153px"
         height="60px"
@@ -16,36 +16,38 @@ changeLanguage("lv");
     </a>
     <div class="header__menu">
       <nav class="header__nav header__nav--desc">
-        <a class="header__link" href="/astro-turn/">{t("global.headerHome")}</a>
-        <a class="header__link "href="/astro-turn/#story"  onclick="closeModal()">{t("global.headerStory")}</a>
-        <a class="header__link" href="/astro-turn/#services">{t("global.headerServices")}</a>
-        <a class="header__link" href="/astro-turn/#contacts">{t("global.headerContacts")}</a>
+        <a class="header__link" href="/">{t("global.headerHome")}</a>
+        <a class="header__link" href="/#story" onclick="closeModal()"
+          >{t("global.headerStory")}</a
+        >
+        <a class="header__link" href="/#services"
+          >{t("global.headerServices")}</a
+        >
+        <a class="header__link" href="/#contacts"
+          >{t("global.headerContacts")}</a
+        >
       </nav>
-      
     </div>
-    <button
-      class="header__button header__button--mob"
-      id="modal-header--mob"
-    >
+    <button class="header__button header__button--mob" id="modal-header--mob">
       <img
-        src="/astro-turn/assets/images/svg/menu.svg"
+        src="/assets/images/svg/menu.svg"
         alt="menu open"
         width="38px"
         height="26px"
-    />
+      />
     </button>
   </header>
 </div>
 
 <Modal
-triggerId="modal-header--mob"
-class="header__menu--mob wrapper"
-closeText={t("global.close")}
+  triggerId="modal-header--mob"
+  class="header__menu--mob wrapper"
+  closeText={t("global.close")}
 >
   <div class="header__box">
-    <a class="header__logo" href="/astro-turn/" onclick="closeModal()">
+    <a class="header__logo" href="/" onclick="closeModal()">
       <img
-        src="/astro-turn/assets/images/svg/logo.svg"
+        src="/assets/images/svg/logo.svg"
         alt="logo"
         width="153px"
         height="60px"
@@ -53,9 +55,17 @@ closeText={t("global.close")}
     </a>
   </div>
   <nav class="header__nav header__nav--mob">
-    <a class="header__link" href="/astro-turn/" onclick="closeModal()">{t("global.headerHome")}</a>
-    <a class="header__link "href="/astro-turn/#story"  onclick="closeModal()">{t("global.headerStory")}</a>
-    <a class="header__link" href="/astro-turn/#services" onclick="closeModal()">{t("global.headerServices")}</a>
-    <a class="header__link" href="/astro-turn/#contacts" onclick="closeModal()">{t("global.headerContacts")}</a>
+    <a class="header__link" href="/" onclick="closeModal()"
+      >{t("global.headerHome")}</a
+    >
+    <a class="header__link" href="/#story" onclick="closeModal()"
+      >{t("global.headerStory")}</a
+    >
+    <a class="header__link" href="/#services" onclick="closeModal()"
+      >{t("global.headerServices")}</a
+    >
+    <a class="header__link" href="/#contacts" onclick="closeModal()"
+      >{t("global.headerContacts")}</a
+    >
   </nav>
 </Modal>

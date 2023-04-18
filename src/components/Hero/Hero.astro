@@ -1,25 +1,29 @@
 ---
 export interface Info {
-	title: string;
-	buttonText: string;
+  title: string;
+  buttonText: string;
 }
 export interface Props {
-	info: Info;
+  info: Info;
 }
 
 const { info } = Astro.props;
 ---
-    <section class="hero">
-      <div class="wrapper">
-        <h1 class="hero__title" set:html={info.title}></h1>
-        <div>
-          <a
-            class="hero__link"
-            href="/astro-turn/"
-          >
-            {info.buttonText}
-            <img class="hero__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" height="20px" width="14px" />
-          </a>
-        </div>
-      </div>
-    </section>
+
+<section class="hero">
+  <div class="wrapper">
+    <h1 class="hero__title" set:html={info.title} />
+    <div>
+      <a class="hero__link" href="/">
+        {info.buttonText}
+        <img
+          class="hero__svg"
+          src="/assets/images/svg/arrow-right.svg"
+          alt="arrow right"
+          height="20px"
+          width="14px"
+        />
+      </a>
+    </div>
+  </div>
+</section>

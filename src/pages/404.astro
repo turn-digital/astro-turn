@@ -3,33 +3,36 @@ import "~styles/styles.scss";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header.astro";
 import Footer from "../components/Footer/Footer.astro";
-import Tag from "../components/Tag/Tag.jsx"
+import Tag from "../components/Tag/Tag.jsx";
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("lv");
 ---
 
 <Layout title={t("global.metaTitle")} desc={t("global.errormetaDesc")}>
-    <div class="error-page">
-    <Header/>
+  <div class="error-page">
+    <Header />
     <main class="error-page__block">
-        <div class="wrapper">
-            <Tag info={{title:t("global.errorTag")}}/>
-            <h1 class="error-page__title">{t("global.errorTitle")}</h1>
-            <p class="error-page__text">{t("global.errorText")}</p>
-            <a
-                class="error-page__link"
-                href="/astro-turn/"
-            >
-            {t("global.errorBtn")}
-                <img class="error-page__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right"  height="20px" width="14px"/>
-            </a>
-        </div>
-        <div class="error-page__circle error-page__circle--first"></div>
-        <div class="error-page__circle error-page__circle--second"></div>
-        <div class="error-page__circle error-page__circle--third"></div>
-        <div class="error-page__circle error-page__circle--fourth"></div>
+      <div class="wrapper">
+        <Tag info={{ title: t("global.errorTag") }} />
+        <h1 class="error-page__title">{t("global.errorTitle")}</h1>
+        <p class="error-page__text">{t("global.errorText")}</p>
+        <a class="error-page__link" href="/">
+          {t("global.errorBtn")}
+          <img
+            class="error-page__svg"
+            src="/assets/images/svg/arrow-right.svg"
+            alt="arrow right"
+            height="20px"
+            width="14px"
+          />
+        </a>
+      </div>
+      <div class="error-page__circle error-page__circle--first"></div>
+      <div class="error-page__circle error-page__circle--second"></div>
+      <div class="error-page__circle error-page__circle--third"></div>
+      <div class="error-page__circle error-page__circle--fourth"></div>
     </main>
-    <Footer/>
-    </div>
+    <Footer />
+  </div>
 </Layout>
