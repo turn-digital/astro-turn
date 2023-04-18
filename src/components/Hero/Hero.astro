@@ -1,6 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components';
-
 export interface Info {
 	title: string;
 	buttonText: string;
@@ -20,7 +18,7 @@ const { info } = Astro.props;
             href="/astro-turn/"
           >
             {info.buttonText}
-            <Image class="hero__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" width={14} height={20} />
+            <img class="hero__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" height="20px" width="14px" />
           </a>
         </div>
       </div>
