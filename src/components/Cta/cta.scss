@@ -7,12 +7,12 @@
   position: relative;
 
   &__title {
-      margin: 32px 0;
-      color: $color-light-black;
-      font-weight: 700;
-      font-size: 34px;
-      line-height: 48px;
-      font-family: 'Inter', sans-serif;
+    margin: 32px 0;
+    color: $color-light-black;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    font-family: "Inter", sans-serif;
   }
 
   &__text {
@@ -20,53 +20,53 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   @include size-laptop() {
-      padding: 160px 0 128px;
-  
-      &__title {
-          width: 65%;
-          margin: 48px 0;
-          font-size: 56px;
-          line-height: 64px;
-      }
+    padding: 160px 0 128px;
 
-      &__text {
-        font-size: 24px;
-        line-height: 40px;
-      }
+    &__title {
+      width: 65%;
+      margin: 48px 0;
+      font-size: 56px;
+      line-height: 64px;
+    }
 
-      &__circle {
-          background: rgba(47, 46, 65, 0.03);
-          border-radius: 50%;
-          position: absolute;
-  
-          &--first {
-              width: 1124px;
-              height: 1124px;
-              right: -740px;
-              top: -378px;
-          }
-          &--second {
-              width: 870px;
-              height: 870px;
-              right: -580px;
-              top: -251px;
-          }
-          &--third {
-              width: 606px;
-              height: 606px;
-              right: -410px;
-              top: -119px;
-          }
-          &--fourth {
-              width: 348px;
-              height: 348px;
-              right: -240px;
-              top: 10px;
-          }
+    &__text {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    &__circle {
+      background: rgba(47, 46, 65, 0.03);
+      border-radius: 50%;
+      position: absolute;
+
+      &--first {
+        width: 1124px;
+        height: 1124px;
+        right: -740px;
+        top: -378px;
       }
+      &--second {
+        width: 870px;
+        height: 870px;
+        right: -580px;
+        top: -251px;
+      }
+      &--third {
+        width: 606px;
+        height: 606px;
+        right: -410px;
+        top: -119px;
+      }
+      &--fourth {
+        width: 348px;
+        height: 348px;
+        right: -240px;
+        top: 10px;
+      }
+    }
   }
 }
