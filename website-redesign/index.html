@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/svg+xml" href="/astro-turn/favicon.svg">
+		<meta name="generator" content="Astro v2.3.0">
+		<title>Turn</title>
+		<meta name="description" content="IT future company">
+	<link rel="stylesheet" href="/astro-turn/_astro/404.8ac04511.css" /><script type="module">const e=document.getElementById("js-current-year");let t=new Date().getFullYear();e.innerHTML=t.toString();
+</script></head>
+	<body>
+		
+	<div class="wrapper">
+  <header class="header">
+    <a class="header__logo" href="/astro-turn/">
+      <img src="/astro-turn/assets/images/svg/logo.svg" alt="logo" width="153px" height="60px">
+    </a>
+    <div class="header__menu">
+      <nav class="header__nav header__nav--desc">
+        <a class="header__link" href="/astro-turn/">Home</a>
+        <a class="header__link " href="/astro-turn/#story" onclick="closeModal()">Story</a>
+        <a class="header__link" href="/astro-turn/#services">Services</a>
+        <a class="header__link" href="/astro-turn/#contacts">Contacts</a>
+      </nav>
+      
+    </div>
+    <button class="header__button header__button--mob" id="modal-header--mob">
+      <img src="/astro-turn/assets/images/svg/menu.svg" alt="menu open" width="38px" height="26px">
+    </button>
+  </header>
+</div>
+
+<div class="modal" role="dialog" aria-labelledby="modal-header--mob">
+  <div class="modal__inner">
+    <div class="modal__content">
+      <h3 tabindex="-1">
+        
+      </h3>
+      
+  <div class="header__box">
+    <a class="header__logo" href="/astro-turn/" onclick="closeModal()">
+      <img src="/astro-turn/assets/images/svg/logo.svg" alt="logo" width="153px" height="60px">
+    </a>
+  </div>
+  <nav class="header__nav header__nav--mob">
+    <a class="header__link" href="/astro-turn/" onclick="closeModal()">Home</a>
+    <a class="header__link " href="/astro-turn/#story" onclick="closeModal()">Story</a>
+    <a class="header__link" href="/astro-turn/#services" onclick="closeModal()">Services</a>
+    <a class="header__link" href="/astro-turn/#contacts" onclick="closeModal()">Contacts</a>
+  </nav>
+
+    </div>
+    <div class="modal__close">
+      <button>Aizvērt</button>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  // variables
+  const body = document.querySelector('body')
+  const modal = document.querySelector('.modal')
+  const modalId = modal.getAttribute('aria-labelledby')
+  const modalCloseButton = modal.querySelector('.modal__close button')
+  const modalTrigger = document.querySelector(`#${modalId}`)
+  
+  // functions
+  const teleportToRoot = element => {
+    element.remove()
+    body.appendChild(element)
+  }
+
+  const getKeyboardFocusableElements = element => {
+    return [...element.querySelectorAll(
+      'a, button, input, textarea, select, details,[tabindex]:not([tabindex="-1"])'
+    )]
+      .filter(el => !el.hasAttribute('disabled'))
+  }
+
+  const trapFocus = event => {
+    const focusables = getKeyboardFocusableElements(modal)
+    const firstFocusable = focusables[0]
+    const lastFocusable = focusables[focusables.length - 1]
+
+    if (document.activeElement === lastFocusable && event.key === 'Tab' && !event.shiftKey) {
+      event.preventDefault()
+      firstFocusable.focus()
+    }
+
+    if (document.activeElement === firstFocusable && event.key === 'Tab' && event.shiftKey) {
+      event.preventDefault()
+      lastFocusable.focus()
+    }
+  }
+
+  const openModal = _ => {
+    const modalTitle = modal.querySelector('h3')
+
+    modal.classList.add('show')
+    body.classList.add('modal-is-active')
+    modalTitle.focus()
+    document.addEventListener('keydown', trapFocus)
+
+    modal.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        closeModal()
+      }
+    })
+  }
+
+  const closeModal = _ => {
+    modal.classList.remove('show')
+    body.classList.remove('modal-is-active')
+    modalTrigger.focus({ preventScroll: true })
+    document.removeEventListener('keydown', trapFocus)
+  }
+
+  // execution
+  teleportToRoot(modal)
+
+  modalTrigger.addEventListener('click', openModal)
+
+  modalCloseButton.addEventListener('click', closeModal)
+
+  modal.addEventListener('click', event => { 
+    if (!event.target.closest('.modal__content')) {
+      closeModal()
+    }
+  })
+
+  window.closeModal = closeModal
+</script>
+	<main>
+		<section class="main-story"><div class="wrapper"><h1 class="main-story__title">Website redesign</h1><div class="main-story__block"><aside class="main-story__aside"><img class="main-story__fit" src="/astro-turn/assets/images/svg/eSaeima--mob.svg" alt="e-Saeima" width="200px" height="100px" /></aside><div class="main-story__box"><div class="main-story__content"><p>We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work. Thanks to the e-Saeima platform, plenary sittings can now be held remotely, with MPs participating from outside the parliament premises.</p><h3>Background</h3><p>At the time when the platform was created, the world was different, it was the start of the pandemic, Zoom or other online meeting platforms were not so commonly used as today. Every business was rushing to the online environment, ecommerce was starting to grow exponentially. Even traditional establishments as the parliament had to find a way how to continue the work in the lockdown situation. Actions needed to be taken on the spot.</p><h3>Challenges</h3><p>The parliament of Latvia consists of 100 members, youngest beeing 26 and the oldest 77 years old, with different educational and computer literacy levels. Not only computer skills, but also accessibility requreiments had to be taken into account when designing the platform.</p><p>other constraint was that Rules of Procedure of the Parliament had to be followed thoughtfully when designing the system, and these rules was created long time ago and for offline style of work of course. Business processes were quite complicated as there are several ways how voting can be executed, and even different kind of vote counting is applied in Parliament based on use case. All of this highly regulated process had to be taken into account.</p><h3>Success criteria</h3><p>One of this project’s success criteria and even critical pillar was highly involved team from the Parliament, the executive management. Those were poeple who sincerely wanted a good product to be developed and even spent their evenings devoted to the project.</p><p>We created a close-knit working process, that consisted of three components - regular progress update meetings, daily standups twice per day for the project’s task force and iterative development approach. Also user involvement was a must. Thanks to this work process we were able to deliver first prototype in 1,5 week time, as soon as it was approved by the management, interactive prototype was created and presented to end-users (the members of the Parliament) for evaluation and improvements. As soon as as the feedback was collected, changes done, the prototype was ready to be shipped to implementation. It all took just around 2 weeks calendar time.</p><p>The platform consists of 3 interfaces - 1 for end-users and 2 administrative interfaces. Due to the time restrictions all focus was set on the end-user interface, other interfaces were made just functional and more energy was put into training people to use these interfaces, not to polish them.</p><p>other success criteria was the use of ready-made design system. There was no need to design smallest elements, prototype was created based on already-made elements, just color palette and styling was applied on top of it.</p></div><div class="main-story__result"><h3>Result</h3><div><p>We are proud to say that the Parliament was still using the platform though restrictions had been lifted and work could be continued old-school way. Plenary sitting amount that was held via the platform is quite high.</p><p>Even some improvements was done to the platform later on that allowed to organize HIgh Court judge elections. If in real life this event could take full day or couple of days, the platform allowed to shorten the time spend at least twice.</p></div></div><h3 class="main-story__subtitle">Who are we working with</h3><ul class="main-story__list"><li><img class="main-story__img" src="/astro-turn/assets/images/svg/tiesibsargs.svg" alt="Tiesibsargs" width="200px" height="100px" /></li><li><img class="main-story__img" src="/astro-turn/assets/images/svg/csp.svg" alt="CSP" width="200px" height="100px" /></li></ul></div></div></div></section>
+		<section id="contacts" class="contacts">
+<div class="wrapper">
+  <div class="tag "><img class="tag__slash" src="/astro-turn/assets/images/svg/slash-line.svg" alt="slash line" height="40px" width="40px" /><p class="tag__text">Contacts</p></div>
+  <h2 class="contacts__title">Get in touch</h2>
+  <p class="contacts__text"><span>Have a project in mind?</span> <span>Need a wise advice?</span> <span>Want to say hi?</span> <span>We are excited to talk to you!</span></p>
+  <ul class="contacts__info">
+    <li><p class="contacts__text contacts__text--bold">Peteris Jurcenko</p></li>
+    <li><a class="contacts__text contacts__text--hover" href="tel:+371 23456789">+371 23456789</a></li>
+    <li><a class="contacts__text contacts__text--hover" href="mailto:peteris@turn.lv">peteris@turn.lv</a></li>
+  </ul>
+</div>
+<div class="contacts__circle contacts__circle--first"></div>
+<div class="contacts__circle contacts__circle--second"></div>
+<div class="contacts__circle contacts__circle--third"></div>
+<div class="contacts__circle contacts__circle--fourth"></div>
+</section>
+        <section id="stories" class="other-stories"><div class="wrapper"><div class="tag "><img class="tag__slash" src="/astro-turn/assets/images/svg/slash-line.svg" alt="slash line" height="40px" width="40px" /><p class="tag__text">Experience</p></div><h2 class="other-stories__title">Other stories</h2><ul class="other-stories__list"><li class="other-stories__item"><h3 class="other-stories__subtitle">Introducing user-centric approach in a financial institution</h3><p class="other-stories__desc">Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="other-stories__link" href="/astro-turn/user-centric-approach">View story<img class="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" height="20px" width="14px" /></a></li><li class="other-stories__item"><h3 class="other-stories__subtitle">Business system redesign</h3><p class="other-stories__desc">Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.</p><a class="other-stories__link" href="/astro-turn/website-redesign">View story<img class="other-stories__svg" src="/astro-turn/assets/images/svg/arrow-right.svg" alt="arrow right" height="20px" width="14px" /></a></li></ul></div></section>
+        <footer class="footer">
+  <div class="wrapper">
+    <div class="footer__box">
+    <a class="footer__logo" href="/astro-turn/">
+      <img src="/astro-turn/assets/images/svg/logo--white.svg" alt="logo" width="102px" height="40px">
+    </a>
+    <nav class="footer__nav">
+      <a class="footer__link" href="/astro-turn/">Home</a>
+      <a class="footer__link" href="/astro-turn/#story">Story</a>
+      <a class="footer__link" href="/astro-turn/#services">Services</a>
+      <a class="footer__link" href="/astro-turn/#contacts">Contacts</a>
+    </nav>          
+    </div>
+
+    <ul class="footer__list">
+      <li class="footer__item">
+        <h3 class="footer__title">Information</h3>
+        <div>
+          <a class="footer__text footer__text--hover" href="/astro-turn/">Cookie policy</a>
+          <a class="footer__text footer__text--hover" href="/astro-turn/">Notice of availability</a>
+          <a class="footer__text footer__text--hover" href="/astro-turn/">Privacy policy</a>
+        </div>
+      </li>
+      <li class="footer__item">
+        <h3 class="footer__title">Contacts</h3>
+        <ul>
+          <li>
+            <a class="footer__text footer__text--hover" href="tel:+371 45535523">+371 45535523</a>
+          </li>
+          <li>
+            <a class="footer__text footer__text--hover" href="mailto:info@turn.lv">info@turn.lv</a>
+          </li>
+          <li class="footer__text">Riga, Latvia
+          </li>
+        </ul>
+      </li>
+      <li class="footer__item">
+        <h3 class="footer__title">Company details:</h3>
+        <ul>
+          <li class="footer__text">
+            <p class="footer__inline">SIA &quot;Turn Digital&quot;&nbsp;</p>
+            <p class="footer__inline">Reg. Nr: 40203026165&nbsp;</p>
+          </li>
+          <li class="footer__text">
+            <p class="footer__inline">Bank: Swedbank A/S,&nbsp;</p>
+            <p class="footer__inline">S.W.I.F.T.: HABALV22</p>
+          </li>
+          <li class="footer__text">Account: LV48HABA0551042639577</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="footer__copy">©<span id="js-current-year"></span> Turn Digital, Latvia</p>
+  </div>
+</footer>
+	</main>
+
+	</body></html>
