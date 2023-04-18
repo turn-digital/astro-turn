@@ -8,7 +8,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "echo turn.turn.lv > ./dist/CNAME && gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/image": "^0.16.1",
@@ -20,6 +22,7 @@
     "sharp": "^0.31.3"
   },
   "devDependencies": {
-    "accessible-astro-components": "^1.6.5"
+    "accessible-astro-components": "^1.6.5",
+    "gh-pages": "^5.0.0"
   }
 }
