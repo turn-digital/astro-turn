@@ -1,4 +1,4 @@
-$default-width: 1440px;
+$default-width: 1120px;
 
 $screen-mobileS: 320px;
 $screen-tablet: 768px;
@@ -14,7 +14,6 @@ $grid-row-gapS: 6px;
 $grid-row-gapM: 12px;
 $grid-row-gapL: 20px;
 $grid-row-gapXL: 36px;
-
 
 // media grid points, call example : @include size-laptop()
 @mixin size-mobileS {
@@ -61,7 +60,6 @@ $grid-row-gapXL: 36px;
   }
 }
 
-
 // main defailt container, using by wrapper class
 @mixin container {
   position: relative;
@@ -69,12 +67,12 @@ $grid-row-gapXL: 36px;
   padding-left: 20px;
   padding-right: 20px;
 
-  @include size-tablet(){
+  @include size-tablet() {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  @include size-laptopL(){
+  @include size-laptopL() {
     padding-left: 20px;
     padding-right: 20px;
     max-width: $default-width;
@@ -82,10 +80,18 @@ $grid-row-gapXL: 36px;
 }
 
 @mixin browser-placeholder($color) {
-  &::-webkit-input-placeholder { color:$color; }
-  &:-moz-placeholder { color:$color; } /* FF 4-18 */
-  &::-moz-placeholder { color:$color; } /* FF 19+ */
-  &:-ms-input-placeholder { color:$color; } /* IE 10+ */
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  } /* FF 4-18 */
+  &::-moz-placeholder {
+    color: $color;
+  } /* FF 19+ */
+  &:-ms-input-placeholder {
+    color: $color;
+  } /* IE 10+ */
 }
 
 // transitions
@@ -110,7 +116,7 @@ $grid-row-gapXL: 36px;
 }
 
 @mixin transition-cubic-fast() {
-  transition: all .3s cubic-bezier(0.000, 0.995, 0.990, 1.000) .3s;
+  transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
 }
 
 // shorthand for full absolute
