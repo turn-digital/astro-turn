@@ -6,175 +6,173 @@
   padding: 40px 0;
 
   &__title {
-      margin-top: 32px;
-      margin-bottom: 32px;
-      font-weight: 700;
-      color: $color-light-black;
-      font-size: 34px;
-      line-height: 48px;
-      font-family: 'Inter', sans-serif;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    color: $color-light-black;
+    font-size: 34px;
+    line-height: 48px;
+    font-family: "Inter", sans-serif;
   }
 
   &__subtitle {
-      font-weight: 700;
-      color: $color-light-black;
-      font-size: 20px;
-      line-height: 32px;
-      margin-bottom: 16px;
-      font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: $color-light-black;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
   }
 
   &__desc {
-      display: inline-block;
-      font-weight: 400;
-      color: $color-light-black;
-      font-size: 16px;
-      line-height: 32px;
-      margin-bottom: 16px;
-      font-family: 'Inter', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    color: $color-light-black;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
   }
 
   &__link {
-      display: inline-block;
-      padding: 4px 4px 4px 0;
-      color: $color-light-black;
-      font-size: 16px;
-      line-height: 32px;
-      margin-bottom: 44px;  
-      text-underline-offset: 4px;
-      font-family: 'Inter', sans-serif;
-      
-      &:focus-visible {
-          outline: none;
-          text-decoration: underline;
-          box-shadow: 0 0 0 2px $color-green;
-      }
+    display: inline-block;
+    padding: 4px 4px 4px 0;
+    color: $color-light-black;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 44px;
+    text-underline-offset: 4px;
+    font-family: "Inter", sans-serif;
 
-      &:hover {
-          text-decoration: none;
-      }
+    &:focus-visible {
+      outline: none;
+      text-decoration: underline;
+      box-shadow: 0 0 0 2px $color-green;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   &__svg {
-      vertical-align: middle;
-      width: 12px;
-      height: 20px;
-      margin-left: 22px;
+    vertical-align: middle;
+    width: 12px;
+    height: 24px;
+    margin-left: 22px;
   }
 
   &__item {
-      background-color: $color-beige;
-      padding: 32px 24px;
-      margin-bottom: 32px;
+    background-color: $color-beige;
+    padding: 32px 24px;
+    margin-bottom: 32px;
 
-      &--first {
-          grid-area: first;
-      }
+    &--first {
+      grid-area: first;
+    }
 
-      &--second {
-          grid-area: second;
-      }
+    &--second {
+      grid-area: second;
+    }
 
-      &--third {
-          grid-area: third;
-      }
-
+    &--third {
+      grid-area: third;
+    }
   }
 
   &__img {
-      width: 100%;
-      max-width: 100%; 
-      height: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   &__block {
-      &-grid {
-          display: grid;
-          grid-template-areas:
-              "first first"
-              "second third";
-              column-gap: 8px;
-              row-gap: 8px;
-              align-content: center;
+    &-grid {
+      display: grid;
+      grid-template-areas:
+        "first first"
+        "second third";
+      column-gap: 8px;
+      row-gap: 8px;
+      align-content: center;
 
-          &--bottom {
-              grid-template-areas:
-              "first second"
-              "third third";
-          }
+      &--bottom {
+        grid-template-areas:
+          "first second"
+          "third third";
+      }
+    }
+
+    &-small {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 8px;
+    }
+  }
+
+  @include size-laptop() {
+    padding: 120px 0;
+
+    &__title {
+      margin-bottom: 64px;
+      font-size: 56px;
+      line-height: 64px;
+    }
+
+    &__subtitle {
+      font-size: 32px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    &__desc {
+      margin-bottom: 40px;
+    }
+
+    &__link {
+      margin-bottom: 38px;
+
+      &--margin {
+        margin-bottom: 0;
+      }
+    }
+
+    &__svg {
+      margin-left: 42px;
+    }
+
+    &__item {
+      padding: 48px;
+      margin-bottom: 0;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-areas:
+        "first first first"
+        "second third third";
+      column-gap: 64px;
+      row-gap: 64px;
+      align-items: start;
+    }
+
+    &__block {
+      &-grid {
+        column-gap: 40px;
+        row-gap: 40px;
       }
 
       &-small {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 8px;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
       }
-  }
+    }
 
-
-  @include size-laptop() {
-      padding: 120px 0;
-
-      &__title {
-        margin-bottom: 64px;
-        font-size: 56px;
-        line-height: 64px;
-      }
-
-      &__subtitle {
-          font-size: 32px;
-          font-size: 32px;
-          line-height: 48px;
-      }
-
-      &__desc {
-          margin-bottom: 48px;
-      }
-
-      &__link {
-          margin-bottom: 38px;
-
-          &--margin {
-              margin-bottom: 0;
-          }
-      }
-
-      &__svg {
-          margin-left: 42px;
-      }
-
-      &__item {
-          padding: 64px;
-          margin-bottom: 0;
-      }
-
-      &__list {
-          display: grid;
-          grid-template-areas: 
-          "first first first"
-          "second third third";
-          column-gap: 64px;
-          row-gap: 64px;
-          align-items: start;
-      }
-
-      &__block {
-          &-grid {
-              column-gap: 40px;
-              row-gap: 40px;
-          }
-  
-          &-small {
-              grid-template-columns: 1fr;
-              row-gap: 40px;
-          }
-      }
-
-      &__box {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 48px;
-          align-items: start;
-      }
+    &__box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 48px;
+      align-items: start;
+    }
   }
 }

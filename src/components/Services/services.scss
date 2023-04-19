@@ -2,146 +2,146 @@
 @use "../../styles/mixins" as *;
 
 .services {
-    &__bg-top {
-        padding: 64px 0 280px;
-        background-color: $color-light-black;
-    }
+  &__bg-top {
+    padding: 64px 0 280px;
+    background-color: $color-light-black;
+  }
 
-    &__bg-bottom {
-        background-color: $color-beige;
-        padding-bottom: 40px;
-    }
+  &__bg-bottom {
+    background-color: $color-beige;
+    padding-bottom: 40px;
+  }
 
+  &__title {
+    margin-top: 32px;
+    color: $color-light-black;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    font-family: "Inter", sans-serif;
+
+    &--white {
+      color: $color-light-gray;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    color: $color-light-black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: "Inter", sans-serif;
+
+    &--white {
+      color: $color-light-gray;
+    }
+  }
+
+  &__item {
+    background-color: $color-light-gray;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+
+  &__box {
+    position: relative;
+    top: -200px;
+    margin-bottom: -200px; //remove empty space from bottom
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    color: $color-light-black;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 32px;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__desc {
+    color: $color-light-black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__tags {
+    .services__desc {
+      margin-top: 16px;
+      margin-right: 32px;
+      display: inline-block;
+    }
+  }
+
+  &__svg {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+  }
+
+  &__bottom {
+    .services__title {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include size-laptop() {
     &__title {
-        margin-top: 32px;
-        color: $color-light-black;
-        font-weight: 700;
-        font-size: 34px;
-        line-height: 48px;
-        font-family: 'Inter', sans-serif;
-
-        &--white {
-            color: $color-light-gray
-        }
+      width: 65%;
+      font-size: 56px;
+      line-height: 64px;
     }
 
     &__text {
-        display: inline-block;
-        color: $color-light-black;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 36px;
-        font-family: 'Inter', sans-serif;
-
-        &--white {
-            color: $color-light-gray;
-        }
-    }
-
-    &__item {
-        background-color: $color-light-gray;
-        padding: 24px;
-        margin-bottom: 32px;
-    }
-
-    &__box {
-        position: relative;
-        top: -200px;
-        margin-bottom: -200px; //remove empty space from bottom
+      font-size: 24px;
+      line-height: 40px;
     }
 
     &__subtitle {
-        margin-bottom: 16px;
-        color: $color-light-black;
-        font-weight: 700;
-        font-size: 23px;
-        line-height: 32px;
-        font-family: 'Inter', sans-serif;
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 48px;
     }
 
     &__desc {
-        color: $color-light-black;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 28px;
-        font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 32px;
     }
 
-    &__tags {        
-        .services__desc {
-            margin-top: 16px;
-            margin-right: 32px;
-            display: inline-block;
-        }
+    &__box {
+      top: -300px;
+      margin-bottom: -300px; //remove empty space from bottom
     }
 
-    &__svg {
-        position: relative;
-        top: 2px;
-        margin-right: 10px;
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 64px;
     }
 
     &__bottom {
-        .services__title {
-            margin-bottom: 32px;
-        }
+      margin-top: 16px;
+      padding: 0 64px;
+
+      .services__title {
+        font-size: 32px;
+        line-height: 48px;
+      }
     }
 
-    @include size-laptop() {
-        &__title {
-            width: 65%;
-            font-size: 56px;
-            line-height: 64px;
-        }
-
-        &__text {
-            font-size: 24px;
-            line-height: 40px;
-        }
-
-        &__subtitle {
-            font-size: 32px;
-            line-height: 48px;
-            margin-bottom: 48px;
-        }
-
-        &__desc {
-            font-size: 16px;
-            line-height: 32px;
-        }
-
-        &__box {
-            top: -300px;
-            margin-bottom: -300px; //remove empty space from bottom
-        }
-
-        &__list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 64px;
-        }
-
-        &__bottom {
-            margin-top: 16px;
-            padding: 0 40px;
-            
-            .services__title {
-                font-size: 32px;
-                line-height: 48px;
-            }
-        }
-
-        &__item {
-            margin-bottom: 64px;
-            padding: 72px 64px;
-        }
-
-        &__bg-top {
-            padding: 128px 0 400px;
-        }
-
-        &__bg-bottom {
-            padding-bottom: 160px;
-        }
+    &__item {
+      margin-bottom: 64px;
+      padding: 72px 64px;
     }
+
+    &__bg-top {
+      padding: 128px 0 400px;
+    }
+
+    &__bg-bottom {
+      padding-bottom: 80px;
+    }
+  }
 }

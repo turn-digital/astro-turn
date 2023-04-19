@@ -38,7 +38,7 @@ const Stories = (props) => {
                   className="stories__svg"
                   src="/assets/images/svg/arrow-right.svg"
                   alt="arrow right"
-                  height="20px"
+                  height="24px"
                   width="14px"
                 />
               </a>
@@ -126,7 +126,7 @@ const Stories = (props) => {
                 width="100px"
               />
               <img
-                className="stories__img stories__item--third"
+                className="stories__img stories__item--third stories__img__eSilva"
                 src="/assets/images/svg/eSilva.svg"
                 alt="e-Silva"
                 height="200px"
