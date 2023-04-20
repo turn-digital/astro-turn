@@ -13,7 +13,7 @@ const CareInfo = (props) => {
             <a href="https://www.schooliowp.lv" target="_blank">
               <img
                 className="care-info__img"
-                src="/assets/images/logo-schoolio.png"
+                src="/assets/images/logo-schoolio.svg"
                 alt="logo schoolio WP"
                 width="235px"
                 height="48px"
@@ -40,7 +40,7 @@ const CareInfo = (props) => {
             <a href="https://www.pieklustamiba.lv" target="_blank">
               <img
                 className="care-info__img"
-                src="/assets/images/logo-pieklustamiba.png"
+                src="/assets/images/logo-pieklustamiba.svg"
                 alt="logo Pieklustamiba"
                 width="235px"
                 height="48px"
