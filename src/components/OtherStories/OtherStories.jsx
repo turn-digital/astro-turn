@@ -10,6 +10,8 @@ const OtherStories = (props) => {
     story1Content,
     story2Content,
     viewStory,
+    story1href,
+    story2href,
   } = props.info;
 
   return (
@@ -21,7 +23,7 @@ const OtherStories = (props) => {
           <li className="other-stories__item">
             <h3 className="other-stories__subtitle">{story1Header}</h3>
             <p className="other-stories__desc">{story1Content}</p>
-            <a className="other-stories__link" href={"/user-centric-approach"}>
+            <a className="other-stories__link" href={story1href}>
               {viewStory}
               <img
                 className="other-stories__svg"
@@ -35,7 +37,7 @@ const OtherStories = (props) => {
           <li className="other-stories__item">
             <h3 className="other-stories__subtitle">{story2Header}</h3>
             <p className="other-stories__desc">{story2Content}</p>
-            <a className="other-stories__link" href={"/website-redesign"}>
+            <a className="other-stories__link" href={story2href}>
               {viewStory}
               <img
                 className="other-stories__svg"

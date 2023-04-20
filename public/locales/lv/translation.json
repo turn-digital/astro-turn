@@ -57,7 +57,18 @@
     "otherStoriesTitle1": "Introducing User-Centric Approach in a Financial Institution",
     "otherStoriesTitle2": "Business system redesign",
     "otherStoriesContent1": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing."
+    "otherStoriesContent2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.",
+
+    "otherStoriesHref1": "/user-centric-approach",
+    "otherStoriesHref2": "/website-redesign",
+
+    "StoryLogo1": "/assets/images/svg/eSaeima--mob.svg",
+    "StoryLogo2": "/assets/images/svg/tiesibsargs.svg",
+    "StoryLogo3": "/assets/images/svg/csp.svg",
+
+    "logo1AltText": "eSaeima",
+    "logo2AltText": "tiesibsargs",
+    "logo3AltText": "csp"
   },
   "user": {
     "metaDesc": "IT future company",
@@ -71,10 +82,19 @@
 
     "otherStoriesTag": "Experience",
     "otherStoriesHeader": "Other stories",
-    "otherStoriesTitle1": "Introducing User-Centric Approach in a Financial Institution",
+    "otherStoriesTitle1": "Digital Transformation in a Traditional Institution on a Tight Schedule: e-Saeima",
     "otherStoriesTitle2": "Business system redesign",
-    "otherStoriesContent1": "One of our core values is people. We put strong focus and effort on making digital services and products easily accessible, usable and comprehensible for everyone.",
-    "otherStoriesContent2": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia."
+    "otherStoriesContent1": "We are enthusiastic about working on projects that demand a significant change in the status quo within a short timeframe. We have had the privilege of participating in several such projects, but the most notable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work. Thanks to the e-Saeima platform, plenary sittings can now be held remotely, with MPs participating from outside the parliament premises.",
+    "otherStoriesContent2": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia.",
+
+    "otherStoriesHref1": "/digital-transformation",
+    "otherStoriesHref2": "/website-redesign",
+
+    "StoryLogo1": "/assets/images/svg/cfla.svg",
+    "StoryLogo2": "/assets/images/svg/trl.svg",
+
+    "logo1AltText": "cfla",
+    "logo2AltText": "trl"
   },
   "website": {
     "metaDesc": "IT future company",
@@ -89,9 +109,20 @@
     "otherStoriesTag": "Experience",
     "otherStoriesHeader": "Other stories",
     "otherStoriesTitle1": "Introducing user-centric approach in a financial institution",
-    "otherStoriesTitle2": "Business system redesign",
+    "otherStoriesTitle2": "Digital Transformation in a Traditional Institution on a Tight Schedule: e-Saeima",
     "otherStoriesContent1": "One of our core values is people. We put strong focus and effort on making digital services and products easily accessible, usable and comprehensible for everyone.",
-    "otherStoriesContent2": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia."
+    "otherStoriesContent2": "We are enthusiastic about working on projects that demand a significant change in the status quo within a short timeframe. We have had the privilege of participating in several such projects, but the most notable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work. Thanks to the e-Saeima platform, plenary sittings can now be held remotely, with MPs participating from outside the parliament premises.",
+
+    "otherStoriesHref1": "/user-centric-approach",
+    "otherStoriesHref2": "/digital-transformation",
+
+    "StoryLogo1": "/assets/images/svg/galerijaCentrs.svg",
+    "StoryLogo2": "/assets/images/svg/eParaksts.svg",
+    "StoryLogo3": "/assets/images/svg/eSilva.svg",
+
+    "logo1AltText": "galerijaCentrs",
+    "logo2AltText": "eParaksts",
+    "logo3AltText": "eSilva"
   },
   "global": {
     "metaTitle": "Turn",
