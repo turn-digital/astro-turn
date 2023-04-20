@@ -11,29 +11,35 @@ import { t, changeLanguage } from "i18next";
 changeLanguage("lv");
 
 const mainStory = {
-    storyHeader: t("user.storyHeader"),
-    mainStoryContent: t("user.mainStoryContent"),
-    resultTitle: t("user.resultTitle"),
-    resultContent: t("user.resultContent"),
-    workingWithTitle: t("user.workingWithTitle"),
+  storyHeader: t("user.storyHeader"),
+  mainStoryContent: t("user.mainStoryContent"),
+  resultTitle: t("user.resultTitle"),
+  resultContent: t("user.resultContent"),
+  workingWithTitle: t("user.workingWithTitle"),
+  logo1: t("user.StoryLogo1"),
+  logo2: t("user.StoryLogo2"),
+  logo1AltText: t("user.logo1AltText"),
+  logo2AltText: t("user.logo2AltText"),
 };
 const otherStories = {
-    tag: t("user.otherStoriesTag"),
-    title: t("user.otherStoriesHeader"),
-    story1Header: t("user.otherStoriesTitle1"),
-    story2Header: t("user.otherStoriesTitle2"),
-    story1Content: t("user.otherStoriesContent1"),
-    story2Content: t("user.otherStoriesContent2"),
-    viewStory: t("global.viewStory")
+  tag: t("user.otherStoriesTag"),
+  title: t("user.otherStoriesHeader"),
+  story1Header: t("user.otherStoriesTitle1"),
+  story2Header: t("user.otherStoriesTitle2"),
+  story1Content: t("user.otherStoriesContent1"),
+  story2Content: t("user.otherStoriesContent2"),
+  story1href: t("user.otherStoriesHref1"),
+  story2href: t("user.otherStoriesHref2"),
+  viewStory: t("global.viewStory"),
 };
 ---
 
 <Layout title={t("global.metaTitle")} desc={t("user.metaDesc")}>
-	<Header/>
-	<main>
-		<MainStory info={mainStory}/>
-		<Contacts/>
-        <OtherStories info={otherStories}/>
-        <Footer/>
-	</main>
+  <Header />
+  <main>
+    <MainStory info={mainStory} />
+    <Contacts />
+    <OtherStories info={otherStories} />
+    <Footer />
+  </main>
 </Layout>
