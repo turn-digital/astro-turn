@@ -125,12 +125,12 @@ const Stories = (props) => {
                 height="200px"
                 width="100px"
               />
+
               <img
                 className="stories__img stories__item--third stories__img__eSilva"
                 src="/assets/images/svg/eSilva.svg"
                 alt="e-Silva"
-                height="200px"
-                width="100px"
+                style={{ backgroundColor: "#F0EFE9" }}
               />
             </div>
           </li>

@@ -24,6 +24,9 @@ const MainStory = (props) => {
           <aside className="main-story__aside">
             {logo1 && (
               <img
+                style={{
+                  backgroundColor: "#F0EFE9",
+                }}
                 className="main-story__fit"
                 src={logo1}
                 alt={logo1AltText}
@@ -41,7 +44,14 @@ const MainStory = (props) => {
             <h3 className="main-story__subtitle">{workingWithTitle}</h3>
             <ul className="main-story__list">
               {logo2 && (
-                <li>
+                <li
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "#F0EFE9",
+                  }}
+                >
                   <img
                     className="main-story__img"
                     src={logo2}
@@ -53,7 +63,14 @@ const MainStory = (props) => {
               )}
 
               {logo3 && (
-                <li>
+                <li
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "#F0EFE9",
+                  }}
+                >
                   <img
                     className="main-story__img"
                     src={logo3}
