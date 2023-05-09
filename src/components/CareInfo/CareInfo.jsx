@@ -24,13 +24,13 @@ const CareInfo = (props) => {
               className="care-info__link"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://www.schooliowp.lv"
+              href="https://www.schooliowp.com/"
             >
-              www.schooliowp.lv
+              www.schooliowp.com
               <img
                 className="care-info__svg"
                 src="/assets/images/svg/blank-link.svg"
-                alt="www.schooliowp.lv link"
+                alt="www.schooliowp.com link"
                 width="22px"
                 height="22px"
               />
