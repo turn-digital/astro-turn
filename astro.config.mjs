@@ -3,11 +3,15 @@ import astroI18next from "astro-i18next";
 import image from "@astrojs/image";
 import preact from "@astrojs/preact";
 
+// https://astro.build/config
 export default defineConfig({
-  site: "https://www.turn.lv", // full custom domain
+  site: "https://www.turn.lv/",
+  // base: "/astro-turn",
   integrations: [
     astroI18next(),
-    image({ serviceEntryPoint: "@astrojs/image/sharp" }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
     preact(),
   ],
 });
