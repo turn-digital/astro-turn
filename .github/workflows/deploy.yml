@@ -31,7 +31,18 @@ jobs:
         run: npm ci
 
       - name: Build (use astro.config values; DO NOT override site/base)
-        run: npm astro build
+        run: npx astro build
+
+      - name: Show dist tree (first 300 lines)
+        run: |
+          echo "---- dist ----"
+          find dist -maxdepth 3 -type f | sed -n '1,300p'
+
+      - name: Fail if locales missing
+        run: |
+          test -d dist/locales || (echo "❌ dist/locales not found"; exit 1)
+          # Adjust if you expect different locales/namespaces:
+          ls dist/locales/*/* || (echo "❌ No locale JSONs under dist/locales"; exit 1)
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
