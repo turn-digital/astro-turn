@@ -3,11 +3,12 @@ export default {
   defaultLocale: "lv",
   locales: ["lv"],
   i18next: {
-    ns: ["translation"],        // we have just one namespace
+    ns: ["translation"],
     defaultNS: "translation",
     backend: {
-      // IMPORTANT: no leading slash
       loadPath: "locales/{{lng}}/{{ns}}.json",
     },
   },
+  // this is important: tell astro-i18next to enable the backend plugin
+  backend: true,
 };
