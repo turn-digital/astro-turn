@@ -1,5 +1,6 @@
-import lv from "./public/locales/lv/translation.json" assert { type: "json" };
+import { readFileSync } from "fs";
 
+/** @type {import('astro-i18next').AstroI18nextConfig} */
 export default {
   defaultLocale: "lv",
   locales: ["lv"],
@@ -7,7 +8,11 @@ export default {
     ns: ["translation"],
     defaultNS: "translation",
     resources: {
-      lv: { translation: lv },
+      lv: {
+        translation: JSON.parse(
+          readFileSync(new URL("./public/locales/lv/translation.json", import.meta.url))
+        ),
+      },
     },
   },
 };
