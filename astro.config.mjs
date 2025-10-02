@@ -5,7 +5,7 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://turn.turn.lv/",
+  site: "https://www.turn.lv",
   // base: "/astro-turn",
   integrations: [
     astroI18next(),
