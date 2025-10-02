@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
   group: "pages"
@@ -17,6 +18,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production          # ensure prod build (no dev-only paths)
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,19 +33,27 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Build (use astro.config values; DO NOT override site/base)
+      - name: Build (uses astro.config site/base)
         run: npx astro build
 
       - name: Show dist tree (first 300 lines)
         run: |
-          echo "---- dist ----"
-          find dist -maxdepth 3 -type f | sed -n '1,300p'
+          echo "---- dist (first 300 files) ----"
+          find dist -type f | sed -n '1,300p'
 
-      - name: Fail if locales missing
+      # If you rely on runtime JSON fetches, you may still emit dist/locales.
+      # That's optional when translations are inlined at build time.
+      - name: Validate baked translations (fail if keys leaked)
         run: |
-          test -d dist/locales || (echo "❌ dist/locales not found"; exit 1)
-          # Adjust if you expect different locales/namespaces:
-          ls dist/locales/*/* || (echo "❌ No locale JSONs under dist/locales"; exit 1)
+          echo "Checking that translation KEYS are not present in built HTML..."
+          # Add or adjust the key patterns below to match your usage.
+          set -e
+          if grep -R -nE 'global\.headerHome|index\.heroTitle' dist; then
+            echo "❌ Found raw i18n KEYS in built output. Build did not bake translations."
+            exit 1
+          else
+            echo "✅ No raw i18n keys found in built output."
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
