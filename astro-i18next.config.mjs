@@ -1,14 +1,13 @@
-/** @type {import('astro-i18next').AstroI18nextConfig} */
+import lv from "./public/locales/lv/translation.json" assert { type: "json" };
+
 export default {
   defaultLocale: "lv",
   locales: ["lv"],
   i18next: {
     ns: ["translation"],
     defaultNS: "translation",
-    backend: {
-      loadPath: "locales/{{lng}}/{{ns}}.json",
+    resources: {
+      lv: { translation: lv },
     },
   },
-  // this is important: tell astro-i18next to enable the backend plugin
-  backend: true,
 };
